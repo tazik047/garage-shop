@@ -1,25 +1,25 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://localhost/shop/admin/');
-define('HTTP_CATALOG', 'http://localhost/shop/');
+define('HTTP_SERVER', 'http://garage-shop.zadorozhnii.cu.cc/admin/');
+define('HTTP_CATALOG', 'http://garage-shop.zadorozhnii.cu.cc/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://localhost/shop/admin/');
-define('HTTPS_CATALOG', 'http://localhost/shop/');
+define('HTTPS_SERVER', 'http://garage-shop.zadorozhnii.cu.cc/admin/');
+define('HTTPS_CATALOG', 'http://garage-shop.zadorozhnii.cu.cc/');
 
 // DIR
-define('DIR_APPLICATION', 'G:/garage_shop/upload/admin/');
-define('DIR_SYSTEM', 'G:/garage_shop/upload/system/');
-define('DIR_IMAGE', 'G:/garage_shop/upload/image/');
-define('DIR_LANGUAGE', 'G:/garage_shop/upload/admin/language/');
-define('DIR_TEMPLATE', 'G:/garage_shop/upload/admin/view/template/');
-define('DIR_CONFIG', 'G:/garage_shop/upload/system/config/');
-define('DIR_CACHE', 'G:/garage_shop/upload/system/storage/cache/');
-define('DIR_DOWNLOAD', 'G:/garage_shop/upload/system/storage/download/');
-define('DIR_LOGS', 'G:/garage_shop/upload/system/storage/logs/');
-define('DIR_MODIFICATION', 'G:/garage_shop/upload/system/storage/modification/');
-define('DIR_UPLOAD', 'G:/garage_shop/upload/system/storage/upload/');
-define('DIR_CATALOG', 'G:/garage_shop/upload/catalog/');
+define('DIR_APPLICATION', 'C:/inetpub/garageShop/admin/');
+define('DIR_SYSTEM', 'C:/inetpub/garageShop/system/');
+define('DIR_IMAGE', 'C:/inetpub/garageShop/image/');
+define('DIR_LANGUAGE', 'C:/inetpub/garageShop/admin/language/');
+define('DIR_TEMPLATE', 'C:/inetpub/garageShop/admin/view/template/');
+define('DIR_CONFIG', 'C:/inetpub/garageShop/system/config/');
+define('DIR_CACHE', 'C:/inetpub/garageShop/system/storage/cache/');
+define('DIR_DOWNLOAD', 'C:/inetpub/garageShop/system/storage/download/');
+define('DIR_LOGS', 'C:/inetpub/garageShop/system/storage/logs/');
+define('DIR_MODIFICATION', 'C:/inetpub/garageShop/system/storage/modification/');
+define('DIR_UPLOAD', 'C:/inetpub/garageShop/system/storage/upload/');
+define('DIR_CATALOG', 'C:/inetpub/garageShop/catalog/');
 
 // DB
 define('DB_DRIVER', 'mysqli');
