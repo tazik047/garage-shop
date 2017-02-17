@@ -43,8 +43,19 @@ class ControllerProductManufacturer extends Controller {
 				$data['categories'][$key]['name'] = $key;
 			}
 
+/******** websiteskin.com *******/				
+				if ($result['image']) {
+					$manufacture_image = $this->model_tool_image->resize($result['image'], $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
+				} else {
+					$manufacture_image = $this->model_tool_image->resize('placeholder.png', $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
+				}
+/******** /websiteskin.com *******/	
+
 			$data['categories'][$key]['manufacturer'][] = array(
 				'name' => $result['name'],
+/******** websiteskin.com *******/				
+				'manufacture_image' => $manufacture_image ,
+/******** /websiteskin.com *******/				
 				'href' => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $result['manufacturer_id'])
 			);
 		}
@@ -142,6 +153,14 @@ class ControllerProductManufacturer extends Controller {
 
 			$data['heading_title'] = $manufacturer_info['name'];
 
+/******** websiteskin.com *******/				
+				if ($manufacturer_info['image']) {
+					$data['manufacturer_image'] = $this->model_tool_image->resize($manufacturer_info['image'], $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
+				} else {
+					$data['manufacturer_image'] = $this->model_tool_image->resize('placeholder.png', $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
+				}
+/******** /websiteskin.com *******/	
+
 			$data['text_empty'] = $this->language->get('text_empty');
 			$data['text_quantity'] = $this->language->get('text_quantity');
 			$data['text_manufacturer'] = $this->language->get('text_manufacturer');
@@ -194,6 +213,10 @@ class ControllerProductManufacturer extends Controller {
 				} else {
 					$special = false;
 				}
+
+/******** websiteskin.com *******/				
+		$data['text_sale'] = $this->language->get('text_sale');
+/******** websiteskin.com *******/				
 
 				if ($this->config->get('config_tax')) {
 					$tax = $this->currency->format((float)$result['special'] ? $result['special'] : $result['price'], $this->session->data['currency']);

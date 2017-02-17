@@ -19,6 +19,14 @@ class ControllerCommonFooter extends Controller {
 		$data['text_order'] = $this->language->get('text_order');
 		$data['text_wishlist'] = $this->language->get('text_wishlist');
 		$data['text_newsletter'] = $this->language->get('text_newsletter');
+/******** websiteskin.com *******/				
+		$data['text_social_Links'] = $this->language->get('text_social_Links');
+		$data['text_twitter'] = $this->language->get('text_twitter');
+		$data['text_facebook'] = $this->language->get('text_facebook');
+		$data['text_google'] = $this->language->get('text_google');
+		$data['text_pinterest'] = $this->language->get('text_pinterest');
+		$data['text_blogspot'] = $this->language->get('text_blogspot');
+/******** /websiteskin.com *******/				
 
 		$this->load->model('catalog/information');
 
@@ -46,6 +54,9 @@ class ControllerCommonFooter extends Controller {
 		$data['newsletter'] = $this->url->link('account/newsletter', '', true);
 
 		$data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
+/******** websiteskin.com *******/				
+		$data['theme_name'] = $this->config->get('theme_default_directory') ;
+/******** /websiteskin.com *******/				
 
 		// Whos Online
 		if ($this->config->get('config_customer_online')) {

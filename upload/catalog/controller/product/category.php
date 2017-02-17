@@ -96,6 +96,10 @@ class ControllerProductCategory extends Controller {
 
 			$data['heading_title'] = $category_info['name'];
 
+/******** websiteskin.com *******/				
+			$data['text_sale'] = $this->language->get('text_sale');
+/******** websiteskin.com *******/				
+
 			$data['text_refine'] = $this->language->get('text_refine');
 			$data['text_empty'] = $this->language->get('text_empty');
 			$data['text_quantity'] = $this->language->get('text_quantity');

@@ -3,6 +3,9 @@
 $_['heading_title']     = 'Акции';
 
 // Text
+/******** /websiteskin.com *******/				
+$_['text_sale']          = 'Скидка';
+/******** /websiteskin.com *******/				
 $_['text_empty']        = 'Нет товаров по акции.';
 $_['text_quantity']     = 'Количество:';
 $_['text_manufacturer'] = 'Производитель:';

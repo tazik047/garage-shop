@@ -4,6 +4,9 @@ $_['heading_title']     = 'Поиск';
 $_['heading_tag']		= 'По тегу - ';
 
 // Text
+/******** /websiteskin.com *******/				
+$_['text_sale']          = 'Скидка';
+/******** /websiteskin.com *******/				
 $_['text_search']       = 'Результаты поиска';
 $_['text_keyword']      = 'Ключевые слова';
 $_['text_category']     = 'Все категории';

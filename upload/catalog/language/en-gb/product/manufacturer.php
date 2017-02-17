@@ -3,6 +3,9 @@
 $_['heading_title']     = 'Find Your Favorite Brand';
 
 // Text
+/******** websiteskin.com *******/				
+$_['text_sale']          = 'Sale';
+/******** /websiteskin.com *******/				
 $_['text_brand']        = 'Brand';
 $_['text_index']        = 'Brand Index:';
 $_['text_error']        = 'Brand not found!';

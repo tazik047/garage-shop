@@ -4,6 +4,9 @@ $_['heading_title']     = 'Search';
 $_['heading_tag']		= 'Tag - ';
 
 // Text
+/******** websiteskin.com *******/				
+$_['text_sale']          = 'Sale';
+/******** /websiteskin.com *******/				
 $_['text_search']       = 'Products meeting the search criteria';
 $_['text_keyword']      = 'Keywords';
 $_['text_category']     = 'All Categories';

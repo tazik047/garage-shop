@@ -10,7 +10,7 @@ class ControllerCommonHeader extends Controller {
 
 		foreach ($analytics as $analytic) {
 			if ($this->config->get($analytic['code'] . '_status')) {
-				$data['analytics'][] = $this->load->controller('extension/analytics/' . $analytic['code'], $this->config->get($analytic['code'] . '_status'));
+				$data['analytics'][] = $this->load->controller('analytics/' . $analytic['code'], $this->config->get($analytic['code'] . '_status'));
 			}
 		}
 
@@ -37,6 +37,10 @@ class ControllerCommonHeader extends Controller {
 
 		$data['name'] = $this->config->get('config_name');
 
+/******** websiteskin.com *******/	
+		$data['theme_name'] = $this->config->get('theme_default_directory') ;
+/******** /websiteskin.com *******/				
+
 		if (is_file(DIR_IMAGE . $this->config->get('config_logo'))) {
 			$data['logo'] = $server . 'image/' . $this->config->get('config_logo');
 		} else {
@@ -55,6 +59,12 @@ class ControllerCommonHeader extends Controller {
 		} else {
 			$data['text_wishlist'] = sprintf($this->language->get('text_wishlist'), (isset($this->session->data['wishlist']) ? count($this->session->data['wishlist']) : 0));
 		}
+
+/******** websiteskin.com *******/				
+		$data['text_sale'] = $this->language->get('text_sale');
+		$data['button_compare'] = sprintf($this->language->get('button_compare'), (isset($this->session->data['compare']) ? count($this->session->data['compare']) : 0));
+		$data['compare'] = $this->url->link('product/compare');
+/******** /websiteskin.com *******/				
 
 		$data['text_shopping_cart'] = $this->language->get('text_shopping_cart');
 		$data['text_logged'] = sprintf($this->language->get('text_logged'), $this->url->link('account/account', '', true), $this->customer->getFirstName(), $this->url->link('account/logout', '', true));

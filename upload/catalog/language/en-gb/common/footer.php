@@ -14,4 +14,12 @@ $_['text_account']      = 'My Account';
 $_['text_order']        = 'Order History';
 $_['text_wishlist']     = 'Wish List';
 $_['text_newsletter']   = 'Newsletter';
+/******** websiteskin.com *******/				
+$_['text_social_Links']     = 'Social Links';
+$_['text_twitter']     = 'Twitter';
+$_['text_facebook']     = 'Facebook';
+$_['text_google']     = 'Google+';
+$_['text_pinterest']     = 'Pinterest';
+$_['text_blogspot']     = 'Blogspot';
+/******** /websiteskin.com *******/				
 $_['text_powered']      = 'Powered By <a href="http://www.opencart.com">OpenCart</a><br /> %s &copy; %s';

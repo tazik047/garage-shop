@@ -1,5 +1,8 @@
 <?php
 // Text
+/******** /websiteskin.com *******/				
+$_['text_sale']          = 'Скидка';
+/******** /websiteskin.com *******/				
 $_['text_search']                             = 'Поиск';
 $_['text_brand']                              = 'Производитель';
 $_['text_manufacturer']                       = 'Производитель:';

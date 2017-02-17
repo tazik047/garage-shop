@@ -1,5 +1,8 @@
 <?php
 // Text
+/******** websiteskin.com *******/				
+$_['text_sale']          = 'Sale';
+/******** /websiteskin.com *******/				
 $_['text_refine']       = 'Refine Search';
 $_['text_product']      = 'Products';
 $_['text_error']        = 'Category not found!';

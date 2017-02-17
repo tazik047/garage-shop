@@ -1,5 +1,8 @@
 <?php
 // Text
+/******** websiteskin.com *******/				
+$_['text_sale']          = 'Sale';
+/******** /websiteskin.com *******/				
 $_['text_search']              = 'Search';
 $_['text_brand']               = 'Brand';
 $_['text_manufacturer']        = 'Brand:';

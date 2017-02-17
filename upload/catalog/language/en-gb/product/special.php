@@ -3,6 +3,9 @@
 $_['heading_title']     = 'Special Offers';
 
 // Text
+/******** websiteskin.com *******/				
+$_['text_sale']          = 'Sale';
+/******** /websiteskin.com *******/				
 $_['text_empty']        = 'There are no special offer products to list.';
 $_['text_quantity']     = 'Qty:';
 $_['text_manufacturer'] = 'Brand:';

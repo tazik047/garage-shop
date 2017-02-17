@@ -1,5 +1,8 @@
 <?php
 // Text
+/******** /websiteskin.com *******/				
+$_['text_sale']          = 'Скидка';
+/******** /websiteskin.com *******/				
 $_['text_refine']       = 'Выберите подкатегорию';
 $_['text_product']      = 'Товары';
 $_['text_error']        = 'Категория не найдена!';
