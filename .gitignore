@@ -2,14 +2,5 @@ upload/admin/config.php
 upload/config.php
 upload/system/storage/cache/*
 *.DS_Store
-upload/image/cache/catalog/demo/manufacturer/burgerking-100x100.png
-upload/image/cache/catalog/demo/manufacturer/canon-100x100.png
-upload/image/cache/catalog/demo/manufacturer/cocacola-100x100.png
-upload/image/cache/catalog/demo/manufacturer/dell-100x100.png
-upload/image/cache/catalog/demo/manufacturer/disney-100x100.png
-upload/image/cache/catalog/demo/manufacturer/harley-100x100.png
-upload/image/cache/catalog/demo/manufacturer/nfl-100x100.png
-upload/image/cache/catalog/demo/manufacturer/nintendo-100x100.png
-upload/image/cache/catalog/demo/manufacturer/redbull-100x100.png
-upload/image/cache/catalog/demo/manufacturer/sony-100x100.png
-upload/image/cache/catalog/demo/manufacturer/starbucks-100x100.png
+upload/image/cache/catalog/demo/*
+upload/system/storage/logs/error.log

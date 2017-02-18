@@ -45,9 +45,9 @@ class ControllerProductManufacturer extends Controller {
 
 /******** websiteskin.com *******/				
 				if ($result['image']) {
-					$manufacture_image = $this->model_tool_image->resize($result['image'], $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
+					$manufacture_image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
 				} else {
-					$manufacture_image = $this->model_tool_image->resize('placeholder.png', $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
+					$manufacture_image = $this->model_tool_image->resize('placeholder.png', $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
 				}
 /******** /websiteskin.com *******/	
 
@@ -155,9 +155,9 @@ class ControllerProductManufacturer extends Controller {
 
 /******** websiteskin.com *******/				
 				if ($manufacturer_info['image']) {
-					$data['manufacturer_image'] = $this->model_tool_image->resize($manufacturer_info['image'], $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
+					$data['manufacturer_image'] = $this->model_tool_image->resize($manufacturer_info['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
 				} else {
-					$data['manufacturer_image'] = $this->model_tool_image->resize('placeholder.png', $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
+					$data['manufacturer_image'] = $this->model_tool_image->resize('placeholder.png', $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
 				}
 /******** /websiteskin.com *******/	
 

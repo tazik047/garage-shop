@@ -1,3 +1,151 @@
 2017-02-17 23:29:01 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
 2017-02-17 23:41:56 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
 2017-02-18 0:39:08 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-18 15:29:00 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-18 15:36:45 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-18 15:37:12 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-18 15:37:31 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-18 20:46:39 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-18 20:47:07 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in G:\garage_shop\upload\system\library\image.php on line 105
+2017-02-18 20:47:07 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 113
+2017-02-18 20:47:07 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 116
+2017-02-18 20:47:07 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 118
+2017-02-18 20:47:07 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in G:\garage_shop\upload\system\library\image.php on line 105
+2017-02-18 20:47:07 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 113
+2017-02-18 20:47:07 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 116
+2017-02-18 20:47:07 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 118
+2017-02-18 20:47:07 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in G:\garage_shop\upload\system\library\image.php on line 105
+2017-02-18 20:47:07 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 113
+2017-02-18 20:47:07 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 116
+2017-02-18 20:47:07 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 118
+2017-02-18 20:47:07 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in G:\garage_shop\upload\system\library\image.php on line 105
+2017-02-18 20:47:07 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 113
+2017-02-18 20:47:07 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 116
+2017-02-18 20:47:07 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 118
+2017-02-18 20:47:15 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-18 20:47:24 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-18 20:47:33 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-18 20:47:41 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-18 20:47:50 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-18 20:47:59 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-18 20:59:42 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-18 20:59:42 - PHP Notice:  Undefined variable: site_key in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\product\product.tpl on line 337
+2017-02-18 21:18:48 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-18 21:19:12 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-18 21:30:45 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-18 21:35:45 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-18 21:36:12 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-18 21:36:27 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-18 21:52:54 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 0:40:04 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in G:\garage_shop\upload\system\library\image.php on line 105
+2017-02-19 0:40:04 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 113
+2017-02-19 0:40:04 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 116
+2017-02-19 0:40:04 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 118
+2017-02-19 0:40:04 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in G:\garage_shop\upload\system\library\image.php on line 105
+2017-02-19 0:40:04 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 113
+2017-02-19 0:40:04 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 116
+2017-02-19 0:40:04 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 118
+2017-02-19 0:40:05 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in G:\garage_shop\upload\system\library\image.php on line 105
+2017-02-19 0:40:05 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 113
+2017-02-19 0:40:05 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 116
+2017-02-19 0:40:05 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 118
+2017-02-19 0:40:05 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in G:\garage_shop\upload\system\library\image.php on line 105
+2017-02-19 0:40:05 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 113
+2017-02-19 0:40:05 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 116
+2017-02-19 0:40:05 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 118
+2017-02-19 0:40:14 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 0:40:24 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 0:40:32 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 0:40:40 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 0:40:50 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 1:05:25 - PHP Notice:  Undefined variable: manufacture_image in G:\garage_shop\upload\catalog\controller\product\manufacturer.php on line 57
+2017-02-19 1:05:25 - PHP Notice:  Undefined variable: manufacture_image in G:\garage_shop\upload\catalog\controller\product\manufacturer.php on line 57
+2017-02-19 1:05:25 - PHP Notice:  Undefined variable: manufacture_image in G:\garage_shop\upload\catalog\controller\product\manufacturer.php on line 57
+2017-02-19 1:05:25 - PHP Notice:  Undefined variable: manufacture_image in G:\garage_shop\upload\catalog\controller\product\manufacturer.php on line 57
+2017-02-19 1:05:25 - PHP Notice:  Undefined variable: manufacture_image in G:\garage_shop\upload\catalog\controller\product\manufacturer.php on line 57
+2017-02-19 1:05:25 - PHP Notice:  Undefined variable: manufacture_image in G:\garage_shop\upload\catalog\controller\product\manufacturer.php on line 57
+2017-02-19 1:05:33 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 1:06:34 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 1:06:34 - PHP Notice:  Undefined index: manufacture_image in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\product\manufacturer_list.tpl on line 31
+2017-02-19 1:06:34 - PHP Notice:  Undefined index: manufacture_image in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\product\manufacturer_list.tpl on line 31
+2017-02-19 1:06:34 - PHP Notice:  Undefined index: manufacture_image in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\product\manufacturer_list.tpl on line 31
+2017-02-19 1:06:34 - PHP Notice:  Undefined index: manufacture_image in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\product\manufacturer_list.tpl on line 31
+2017-02-19 1:06:34 - PHP Notice:  Undefined index: manufacture_image in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\product\manufacturer_list.tpl on line 31
+2017-02-19 1:06:34 - PHP Notice:  Undefined index: manufacture_image in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\product\manufacturer_list.tpl on line 31
+2017-02-19 1:06:54 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 1:06:54 - PHP Notice:  Undefined variable: manufacturer_image in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\product\manufacturer_info.tpl on line 18
+2017-02-19 1:07:25 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in G:\garage_shop\upload\system\library\image.php on line 105
+2017-02-19 1:07:25 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 113
+2017-02-19 1:07:25 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 116
+2017-02-19 1:07:25 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 118
+2017-02-19 1:07:35 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 1:07:43 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 1:09:03 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in G:\garage_shop\upload\system\library\image.php on line 105
+2017-02-19 1:09:03 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 113
+2017-02-19 1:09:03 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 116
+2017-02-19 1:09:03 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 118
+2017-02-19 1:09:14 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 1:09:23 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 1:09:40 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in G:\garage_shop\upload\system\library\image.php on line 105
+2017-02-19 1:09:40 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 113
+2017-02-19 1:09:40 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 116
+2017-02-19 1:09:40 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 118
+2017-02-19 1:09:50 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 1:10:00 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 1:51:50 - PHP Notice:  Undefined variable: entry_image_product_width in G:\garage_shop\upload\admin\view\template\setting\setting.tpl on line 347
+2017-02-19 1:52:50 - PHP Notice:  Undefined variable: help_image_product_width in G:\garage_shop\upload\admin\view\template\setting\setting.tpl on line 345
+2017-02-19 1:52:50 - PHP Notice:  Undefined variable: entry_image_product_width in G:\garage_shop\upload\admin\view\template\setting\setting.tpl on line 345
+2017-02-19 1:52:50 - PHP Notice:  Undefined variable: entry_image_product_width in G:\garage_shop\upload\admin\view\template\setting\setting.tpl on line 347
+2017-02-19 2:01:10 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in G:\garage_shop\upload\system\library\image.php on line 105
+2017-02-19 2:01:10 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 113
+2017-02-19 2:01:10 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 116
+2017-02-19 2:01:10 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 118
+2017-02-19 2:01:22 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 2:01:33 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 2:01:34 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in G:\garage_shop\upload\system\library\image.php on line 105
+2017-02-19 2:01:34 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 113
+2017-02-19 2:01:34 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 116
+2017-02-19 2:01:34 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 118
+2017-02-19 2:01:34 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in G:\garage_shop\upload\system\library\image.php on line 105
+2017-02-19 2:01:34 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 113
+2017-02-19 2:01:34 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 116
+2017-02-19 2:01:34 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 118
+2017-02-19 2:01:34 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in G:\garage_shop\upload\system\library\image.php on line 105
+2017-02-19 2:01:34 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 113
+2017-02-19 2:01:34 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 116
+2017-02-19 2:01:34 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 118
+2017-02-19 2:01:34 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in G:\garage_shop\upload\system\library\image.php on line 105
+2017-02-19 2:01:34 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 113
+2017-02-19 2:01:34 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 116
+2017-02-19 2:01:34 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 118
+2017-02-19 2:01:41 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 2:01:50 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 2:02:00 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 2:02:09 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 2:02:19 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 2:02:41 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in G:\garage_shop\upload\system\library\image.php on line 105
+2017-02-19 2:02:41 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 113
+2017-02-19 2:02:41 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 116
+2017-02-19 2:02:41 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 118
+2017-02-19 2:02:41 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in G:\garage_shop\upload\system\library\image.php on line 105
+2017-02-19 2:02:41 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 113
+2017-02-19 2:02:41 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 116
+2017-02-19 2:02:41 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 118
+2017-02-19 2:02:41 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in G:\garage_shop\upload\system\library\image.php on line 105
+2017-02-19 2:02:41 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 113
+2017-02-19 2:02:41 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 116
+2017-02-19 2:02:41 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 118
+2017-02-19 2:02:41 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in G:\garage_shop\upload\system\library\image.php on line 105
+2017-02-19 2:02:41 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 113
+2017-02-19 2:02:41 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 116
+2017-02-19 2:02:41 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in G:\garage_shop\upload\system\library\image.php on line 118
+2017-02-19 2:02:50 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 2:03:00 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 2:03:08 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 2:03:17 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 2:03:27 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 2:06:27 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 2:07:07 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 2:07:21 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 2:07:40 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
+2017-02-19 2:07:55 - PHP Notice:  Undefined variable: wss_modify_theme_css_temp in G:\garage_shop\upload\catalog\view\theme\free-fjord-cars-audio-lemon\template\common\header.tpl on line 35
