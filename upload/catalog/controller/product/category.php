@@ -201,6 +201,14 @@ class ControllerProductCategory extends Controller {
 				} else {
 					$special = false;
 				}
+				
+				if ((float)$result['special'] && ($this->customer->isLogged() || !$this->config->get('config_customer_price'))) {
+					$p = $this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax'));
+					$s = $this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax'));
+					$specialPerc = round(($p - $s) / $p * 100, 2);
+				} else {
+					$specialPerc = false;
+				}
 
 				if ($this->config->get('config_tax')) {
 					$tax = $this->currency->format((float)$result['special'] ? $result['special'] : $result['price'], $this->session->data['currency']);
@@ -224,6 +232,7 @@ class ControllerProductCategory extends Controller {
 					'tax'         => $tax,
 					'minimum'     => $result['minimum'] > 0 ? $result['minimum'] : 1,
 					'rating'      => $result['rating'],
+					'specialPerc' => $specialPerc,
 					'href'        => $this->url->link('product/product', 'path=' . $this->request->get['path'] . '&product_id=' . $result['product_id'] . $url)
 				);
 			}

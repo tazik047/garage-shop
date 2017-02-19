@@ -2,5 +2,5 @@ upload/admin/config.php
 upload/config.php
 upload/system/storage/cache/*
 *.DS_Store
-upload/image/cache/catalog/demo/*
+upload/image/cache/*
 upload/system/storage/logs/error.log
