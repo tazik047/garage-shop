@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row">
       <?php if ($informations) { ?>
-      <div class="col-sm-3">
+      <div class="col-sm-4">
         <h5><?php echo $text_information; ?></h5>
         <ul class="list-unstyled">
           <?php foreach ($informations as $information) { ?>
@@ -12,7 +12,7 @@
         </ul>
       </div>
       <?php } ?>
-      <div class="col-sm-3">
+      <div class="col-sm-4">
         <h5><?php echo $text_service; ?></h5>
         <ul class="list-unstyled">
           <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
@@ -20,7 +20,7 @@
           <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
         </ul>
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-4">
         <h5><?php echo $text_extra; ?></h5>
         <ul class="list-unstyled">
           <li><a href="<?php echo $manufacturer; ?>"><?php echo $text_manufacturer; ?></a></li>
@@ -36,7 +36,9 @@
           <li><a href="<?php echo $newsletter; ?>"><?php echo $text_newsletter; ?></a></li>
         </ul>
       </div>
-      <div class="col-sm-3">
+      <?php 
+	  //TODO: Comment unused social links:
+	  /*<div class="col-sm-3">
     <h5 class="header"><?php echo $text_social_Links; ?></h5>
     <ul class="content list-unstyled">
       <li> <a title="Follow us on <?php echo $text_twitter; ?>" target="_blank" href="https://www.twitter.com/websiteskin"><span class="social twitter">&nbsp;</span><?php echo $text_twitter; ?></a> 
@@ -54,22 +56,14 @@
       </li>
     </ul>
 
-      </div>
+      </div>*/
+	  ?>
     </div>
     <hr>
     <div class="row">
-      <div class="col-sm-4">
-    <p><?php echo $powered; ?></p> 
-      </div>
-      <div class="col-sm-4">
-           <div class="iconspayments">
-<img src="catalog/view/theme/<?php echo $theme_name; ?>/image/payments_icons/paypal.png" alt="paypal" title="paypal" class="iconspayment" />
-<img src="catalog/view/theme/<?php echo $theme_name; ?>/image/payments_icons/skrill.png" alt="skrill" title="skrill" class="iconspayment" />
-           </div>
-      </div>
-      <div class="col-sm-4">
-<a href="http://websiteskin.com" target="_blank">WebSiteSkin.com</a> <a href="http://readigo.com" target="_blank">ReadiGo.com</a> <a href="http://site1day.com" target="_blank">Site1Day.com</a> 
-      </div>
+      <center>
+		<p><?php echo $powered; ?></p> 
+      </center>
     </div>
   </div>
 <script type="text/javascript"><!--
@@ -89,12 +83,5 @@
 --></script>
 
 </footer>
-
-<!--
-OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
-Please donate via PayPal to donate@opencart.com
-//-->
-
-<!-- Theme created by WebSiteSkin for OpenCart 2.1 www.websiteskin.com -->
 
 </body></html>

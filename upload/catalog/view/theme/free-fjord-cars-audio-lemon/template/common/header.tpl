@@ -58,7 +58,7 @@
 <body class="<?php echo $class; ?>">
 <nav id="top" title="<?php echo $direction; ?>">
   <div class="container">
-    <?php echo $currency; ?>
+    <?php /*echo $currency;*/ ?>
     <?php echo $language; ?>
     <div id="top-links" class="nav pull-right">
       <ul class="list-inline">

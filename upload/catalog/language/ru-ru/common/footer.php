@@ -14,4 +14,4 @@ $_['text_account']      = 'Личный Кабинет';
 $_['text_order']        = 'История заказов';
 $_['text_wishlist']     = 'Закладки';
 $_['text_newsletter']   = 'Рассылка';
-$_['text_powered']      = 'Работает на <a href="http://opencart-russia.ru">OpenCart "Русская сборка"</a><br /> %s &copy; %s';
+$_['text_powered']      = 'Разработано <a href="https://ua.linkedin.com/in/stanislav-zadorozhnii-503476a4" target="blank">Задорожний С.А.</a> и <a href="https://ua.linkedin.com/in/валерий-моргун-26a26151" target="blank">Моргун В.С.</a><br /> %s &copy; %s';
