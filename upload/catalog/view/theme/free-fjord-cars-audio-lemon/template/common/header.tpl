@@ -32,7 +32,10 @@
 <?php } ?>
 
 <style type="text/css">
-  <?php echo $wss_modify_theme_css_temp; ?>
+  <?php 
+  //TODO: comment undefined variable.
+  /*echo $wss_modify_theme_css_temp;*/
+  ?>
 </style>
 
 	<!-- easing plugin ( optional ) -->
