@@ -1,0 +1,68 @@
+2017-02-20 1:21:18 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Auto Fill URL
+
+FILE: admin/controller/catalog/product.php
+CODE: function getForm()
+LINE: 547
+
+FILE: admin/controller/catalog/category.php
+CODE: function getForm()
+LINE: 300
+
+FILE: admin/controller/catalog/manufacturer.php
+CODE: function getForm()
+LINE: 265
+
+FILE: admin/controller/catalog/information.php
+CODE: function getForm()
+LINE: 265
+
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <?php echo $footer; ?>
+LINE: 1416
+
+FILE: admin/view/template/catalog/category_form.tpl
+CODE: <?php echo $footer; ?>
+LINE: 305
+
+FILE: admin/view/template/catalog/manufacturer_form.tpl
+CODE: <?php echo $footer; ?>
+LINE: 96
+
+FILE: admin/view/template/catalog/information_form.tpl
+CODE: <?php echo $footer; ?>
+LINE: 217
+----------------------------------------------------------------
