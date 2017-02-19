@@ -334,7 +334,7 @@
                     <input type="radio" name="rating" value="5" />
                     &nbsp;<?php echo $entry_good; ?></div>
                 </div>
-                <?php if ($site_key) { ?>
+                <?php if (isset($site_key) && $site_key) { ?>
                   <div class="form-group">
                     <div class="col-sm-12">
                       <div class="g-recaptcha" data-sitekey="<?php echo $site_key; ?>"></div>
