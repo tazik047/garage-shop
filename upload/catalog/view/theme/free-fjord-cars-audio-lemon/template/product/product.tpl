@@ -27,9 +27,7 @@
           <ul class="thumbnails">
             <?php if ($thumb) { ?>
 <?php if ($special) { ?>
-<span class="discount-label">
-            <span class="discount-label__item"><?php echo $text_sale; ?></span>
-</span>
+<span class="sale-an-label">-<?php echo $specialPerc; ?>%</span>
 <?php } ?>
             <li><a class="thumbnail" href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>"><img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a></li>
             <?php } ?>

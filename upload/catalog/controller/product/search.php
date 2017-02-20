@@ -127,11 +127,7 @@ class ControllerProductSearch extends Controller {
 			$data['heading_title'] = $this->language->get('heading_title') .  ' - ' . $this->request->get['search'];
 		} else {
 			$data['heading_title'] = $this->language->get('heading_title');
-		}
-
-/******** websiteskin.com *******/				
-			$data['text_sale'] = $this->language->get('text_sale');
-/******** websiteskin.com *******/				
+		}			
 
 		$data['text_empty'] = $this->language->get('text_empty');
 		$data['text_search'] = $this->language->get('text_search');
@@ -235,6 +231,14 @@ class ControllerProductSearch extends Controller {
 				} else {
 					$special = false;
 				}
+				
+				if ((float)$result['special'] && ($this->customer->isLogged() || !$this->config->get('config_customer_price'))) {
+					$p = $this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax'));
+					$s = $this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax'));
+					$specialPerc = round(($p - $s) / $p * 100, 2);
+				} else {
+					$specialPerc = false;
+				}
 
 				if ($this->config->get('config_tax')) {
 					$tax = $this->currency->format((float)$result['special'] ? $result['special'] : $result['price'], $this->session->data['currency']);
@@ -255,6 +259,7 @@ class ControllerProductSearch extends Controller {
 					'description' => utf8_substr(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8')), 0, $this->config->get($this->config->get('config_theme') . '_product_description_length')) . '..',
 					'price'       => $price,
 					'special'     => $special,
+					'specialPerc' => $specialPerc,
 					'tax'         => $tax,
 					'minimum'     => $result['minimum'] > 0 ? $result['minimum'] : 1,
 					'rating'      => $result['rating'],

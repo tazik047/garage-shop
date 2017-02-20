@@ -96,10 +96,10 @@
         <div class="product-layout product-list col-xs-12">
           <div class="product-thumb">
 <?php if ($product['special']) { ?>
-<!--<div class="discount-label">
+<?php /*<div class="discount-label">
             <span class="discount-label__item"><?php echo $text_sale; ?></span>
 </div>
--->
+*/?>
 <span class="sale-an-label">-<?php echo $product['specialPerc']; ?>%</span>
 <?php } ?>
             <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
