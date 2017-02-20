@@ -1,5 +1,4 @@
 <?php
 // Text
-$_['text_footer'] 	= '<HR><a href="http://www.opencart.com">OpenCart</a> &copy; 2009-' . date('Y') . ' Все права защищены.<br> <BR> <a href="http://opencart-russia.ru" target="_blank">Русская сборка OpenCart</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://forum.opencart-russia.ru" target="_blank">Форум поддержки</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://shop.opencart-russia.ru" target="_blank">Магазин дополнений</a>';
-$_['text_version'] 	= 'Version %s (trs-2.3.0.0)';
-
+$_['text_footer'] 	= 'Разработано <a href="https://ua.linkedin.com/in/stanislav-zadorozhnii-503476a4" target="blank">Задорожний С.А.</a> и <a href="https://ua.linkedin.com/in/валерий-моргун-26a26151" target="blank">Моргун В.С.</a><br /> GarageShop &copy 2017';
+$_['text_version'] 	= '';
