@@ -216,7 +216,8 @@ div.required .control-label:before {
 	display: table-cell;
 }
 #menu .dropdown-inner a {
-	min-width: 160px;
+	min-width: 217px;
+	margin: 0.3em;
 	display: block;
 	padding: 3px 20px;
 	clear: both;
