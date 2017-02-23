@@ -321,12 +321,12 @@ class ControllerProductProduct extends Controller {
 			}
 			
 			if ((float)$product_info['special'] && ($this->customer->isLogged() || !$this->config->get('config_customer_price'))) {
-					$p = $this->tax->calculate($product_info['price'], $product_info['tax_class_id'], $this->config->get('config_tax'));
-					$s = $this->tax->calculate($product_info['special'], $product_info['tax_class_id'], $this->config->get('config_tax'));
-					$data['specialPerc'] = round(($p - $s) / $p * 100, 2);
-				} else {
-					$data['specialPerc'] = false;
-				}
+				$p = $this->tax->calculate($product_info['price'], $product_info['tax_class_id'], $this->config->get('config_tax'));
+				$s = $this->tax->calculate($product_info['special'], $product_info['tax_class_id'], $this->config->get('config_tax'));
+				$data['specialPerc'] = round(($p - $s) / $p * 100, 2);
+			} else {
+				$data['specialPerc'] = false;
+			}
 
 			if ($this->config->get('config_tax')) {
 				$data['tax'] = $this->currency->format((float)$product_info['special'] ? $product_info['special'] : $product_info['price'], $this->session->data['currency']);

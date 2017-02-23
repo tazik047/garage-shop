@@ -1294,10 +1294,7 @@ footer .content.list-unstyled > li {
 	}
 
 /* MEDIA by websiteskin.com */
-@media (max-width: 767px) {
-#top {
-  margin: 240px 0 -240px;
-}
+@media (max-width: 769px) {
 header {
   margin-top: -25px;
 }
@@ -1452,6 +1449,33 @@ header, #toTop {
 }
 
 /******** SALE LABEL ********/
+
+/******** CUSTOM FIXES ********/
+
+.product-grid .product-thumb .image {
+    min-height: 228px;
+}
+
+header{
+	margin-top: 0;
+	padding: 40px 0px 38px;
+	position: relative;
+	overflow: visible;
+}
+
+#top{
+	margin-top: 0px;
+}
+
+.container_bg{
+	margin-top: -38px;
+}
+
+#cart{
+    max-height: 40px;
+}
+
+/******** CUSTOM FIXES ********/
 
 /* /LEMON COLOR by websiteskin.com */
 /***==== /http://WebSiteSkin.com styles =====***/
