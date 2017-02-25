@@ -4,3 +4,4 @@ upload/system/storage/cache/*
 *.DS_Store
 upload/image/cache/*
 upload/system/storage/logs/error.log
+.idea
