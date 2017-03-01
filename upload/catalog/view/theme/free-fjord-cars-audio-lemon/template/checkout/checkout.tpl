@@ -47,7 +47,7 @@
 				    <h3><?php echo $text_your_details; ?></h3>
 				  </div>
 				  
-				  <?php //if (!isset($address)) {?>
+				  <?php /*if (!isset($address)) {?>
 				  <div class="form-group" >
 				    <label class="control-label"><?php echo $entry_customer_group; ?></label>
 				    <?php foreach ($customer_groups as $customer_group) { ?>
@@ -64,8 +64,8 @@
 					<?php echo $customer_group['name']; ?></label>
 				    </div>
 				    <?php } ?>
-				    <?php } ?>
-				  </div>
+				    <?php }?>
+				  </div><?php */ ?>
 				  <div class="form-group required col-md-6">
 				    <label class="control-label" for="input-payment-firstname"><?php echo $entry_firstname; ?></label>
 				    <input type="text" name="firstname" value="<?php if (isset($address['firstname'])) echo $address['firstname']; elseif (isset($firstname)) echo $firstname; ?>" placeholder="<?php echo str_replace(':','',$entry_firstname); ?>" id="input-payment-firstname" class="form-control" <?php if (isset($customer_id)) {?> readonly<?php }?>/>
@@ -82,15 +82,15 @@
 				    <label class="control-label" for="input-payment-telephone"><?php echo $entry_telephone; ?></label>
 				    <input type="text" name="telephone" value="<?php if (isset($telephone)) echo $telephone;?>" placeholder="<?php echo str_replace(':','',$entry_telephone); ?>" id="input-payment-telephone" class="form-control" <?php if (isset($customer_id)) {?> readonly<?php }?>/>
 				  </div>
-				  <?php //if (!$checkout_hide_fax) {?>
+				  <?php /*if (!$checkout_hide_fax) {?>
 				  <div class="form-group col-md-6">
 				    <label class="control-label" for="input-payment-fax"><?php echo $entry_fax; ?></label>
 				    <input type="text" name="fax" value="<?php if (isset($fax)) echo $fax;?>" placeholder="<?php echo str_replace(':','',$entry_fax); ?>" id="input-payment-fax" class="form-control" <?php if (isset($customer_id)) {?> readonly<?php }?>/>
 				  </div>
-				  <?php //}?>
+				  <?php }*/?>
 
 				  <div class="col-md-12">
-				    <h3 class="clearfix"><?php echo $text_your_address; ?></h3>
+				    <h3 class=""><?php echo $text_your_address; ?></h3>
 
 			      <?php if ($addresses) { ?>
 				  <?php if (isset($customer_id)) {?>	  
@@ -122,14 +122,14 @@
 				  </div>
 
 				  <div id="payment-address-new" <?php if (isset($customer_id) && $addresses) {?>	style="display:none"<?php }?>>
-				  <?php // if (!$checkout_hide_company){?>
+				  <?php /* if (!$checkout_hide_company){?>
 				  <div class="form-group col-md-6">
 				    <label class="control-label" for="input-payment-company"><?php echo $entry_company; ?></label>
 				    <input type="text" name="company" value="<?php if (isset($company)) echo $company;?>" placeholder="<?php echo str_replace(':','',$entry_company); ?>" id="input-payment-company" class="form-control" />
 				  </div>
 				   <?php //} else {?>
 					   <input type="hidden" name="company" value="" />
-				   <?php //}?>
+				   <?php } */?>
 				  
 				  <?php if (isset($entry_company_id)) { ?>
 				  <?php if (!$checkout_hide_company_id){?>
@@ -154,10 +154,12 @@
 				    <label class="control-label" for="input-payment-address-1"><?php echo $entry_address_1; ?></label>
 				    <input type="text" name="address_1" value="<?php if (isset($address_1)) echo $address_1;?>" placeholder="<?php echo str_replace(':','',$entry_address_1); ?>" id="input-payment-address-1" class="form-control" />
 				  </div>
+				<?php /* ?>
 				  <div class="form-group col-md-12">
 				    <label class="control-label" for="input-payment-address-2"><?php echo $entry_address_2; ?></label>
 				    <input type="text" name="address_2" value="<?php if (isset($address_2)) echo $address_2;?>" placeholder="<?php echo str_replace(':','',$entry_address_2); ?>" id="input-payment-address-2" class="form-control" />
 				  </div>
+				<?php */ ?>
 				  <div class="form-group required col-md-6">
 				    <label class="control-label" for="input-payment-country"><?php echo $entry_country; ?></label>
 				    <select name="country_id" id="input-payment-country" class="form-control">
@@ -229,7 +231,7 @@
 				  <?php }?>
 
 				  <div class="col-md-12">
-				    <h3 class="clearfix"><?php echo $text_your_address; ?></h3>
+				    <h3 class=""><?php echo $text_your_address; ?></h3>
 				  </div>
 
 				  <?php if (!empty($address['company'])) {?>
@@ -274,7 +276,7 @@
 		      </div>
 		    </div>			      
 		    <div class="col-md-6">
-			<div class="shiptobilling clearfix">
+			<div class="shiptobilling">
 				    <h3><?php echo $text_checkout_shipping_address; ?></h3>
 					<?php if (!isset($customer_id)) {?>
 				    <label class="checkbox">
