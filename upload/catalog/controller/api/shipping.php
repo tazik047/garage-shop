@@ -33,6 +33,11 @@ class ControllerApiShipping extends Controller {
 					}
 				}
 
+                $ignore = array('city', 'address_2', 'company');
+                foreach ($ignore as $i) {
+                    $this->request->post[$i] = 'Игнорируется';
+                }
+
 				if ((utf8_strlen(trim($this->request->post['firstname'])) < 1) || (utf8_strlen(trim($this->request->post['firstname'])) > 32)) {
 					$json['error']['firstname'] = $this->language->get('error_firstname');
 				}

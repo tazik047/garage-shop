@@ -104,6 +104,11 @@ class ControllerCheckoutRegister extends Controller {
 	public function save() {
 		$this->load->language('checkout/checkout');
 
+        $ignore = array('city', 'fax', 'address_2', 'company');
+        foreach ($ignore as $i) {
+            $this->request->post[$i] = 'Игнорируется';
+        }
+
 		$json = array();
 
 		// Validate if customer is already logged out.

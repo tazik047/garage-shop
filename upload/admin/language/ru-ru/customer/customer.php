@@ -26,7 +26,7 @@ $_['column_action']         = 'Действие';
 
 // Entry
 $_['entry_customer_group']  = 'Группа покупателей';
-$_['entry_firstname']       = 'Имя, Отчество';
+$_['entry_firstname']       = 'Имя';
 $_['entry_lastname']        = 'Фамилия';
 $_['entry_email']           = 'E-Mail';
 $_['entry_telephone']       = 'Телефон';

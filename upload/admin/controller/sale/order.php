@@ -939,7 +939,7 @@ class ControllerSaleOrder extends Controller {
 			if ($order_info['payment_address_format']) {
 				$format = $order_info['payment_address_format'];
 			} else {
-				$format = '{firstname} {lastname}' . "\n" . '{company}' . "\n" . '{address_1}' . "\n" . '{address_2}' . "\n" . '{city} {postcode}' . "\n" . '{zone}' . "\n" . '{country}';
+				$format = '{firstname} {lastname}' . "\n" . '{company}' . "\n" . '{address_1}' . "\n" . '{address_2}' . "\n" . '{zone} {postcode}' . "\n" . '{zone}' . "\n" . '{country}';
 			}
 
 			$find = array(
@@ -958,10 +958,10 @@ class ControllerSaleOrder extends Controller {
 			$replace = array(
 				'firstname' => $order_info['payment_firstname'],
 				'lastname'  => $order_info['payment_lastname'],
-				'company'   => $order_info['payment_company'],
+				//'company'   => $order_info['payment_company'],
 				'address_1' => $order_info['payment_address_1'],
-				'address_2' => $order_info['payment_address_2'],
-				'city'      => $order_info['payment_city'],
+				//'address_2' => $order_info['payment_address_2'],
+				//'city'      => $order_info['payment_city'],
 				'postcode'  => $order_info['payment_postcode'],
 				'zone'      => $order_info['payment_zone'],
 				'zone_code' => $order_info['payment_zone_code'],
@@ -974,7 +974,7 @@ class ControllerSaleOrder extends Controller {
 			if ($order_info['shipping_address_format']) {
 				$format = $order_info['shipping_address_format'];
 			} else {
-				$format = '{firstname} {lastname}' . "\n" . '{company}' . "\n" . '{address_1}' . "\n" . '{address_2}' . "\n" . '{city} {postcode}' . "\n" . '{zone}' . "\n" . '{country}';
+				$format = '{firstname} {lastname}' . "\n" . '{company}' . "\n" . '{address_1}' . "\n" . '{address_2}' . "\n" . '{zone} {postcode}' . "\n" . '{zone}' . "\n" . '{country}';
 			}
 
 			$find = array(
@@ -993,10 +993,10 @@ class ControllerSaleOrder extends Controller {
 			$replace = array(
 				'firstname' => $order_info['shipping_firstname'],
 				'lastname'  => $order_info['shipping_lastname'],
-				'company'   => $order_info['shipping_company'],
+				//'company'   => $order_info['shipping_company'],
 				'address_1' => $order_info['shipping_address_1'],
-				'address_2' => $order_info['shipping_address_2'],
-				'city'      => $order_info['shipping_city'],
+				//'address_2' => $order_info['shipping_address_2'],
+				//'city'      => $order_info['shipping_city'],
 				'postcode'  => $order_info['shipping_postcode'],
 				'zone'      => $order_info['shipping_zone'],
 				'zone_code' => $order_info['shipping_zone_code'],
@@ -1643,7 +1643,7 @@ class ControllerSaleOrder extends Controller {
 				if ($order_info['payment_address_format']) {
 					$format = $order_info['payment_address_format'];
 				} else {
-					$format = '{firstname} {lastname}' . "\n" . '{company}' . "\n" . '{address_1}' . "\n" . '{address_2}' . "\n" . '{city} {postcode}' . "\n" . '{zone}' . "\n" . '{country}';
+					$format = '{firstname} {lastname}' . "\n" . '{company}' . "\n" . '{address_1}' . "\n" . '{address_2}' . "\n" . '{zone} {postcode}' . "\n" . '{zone}' . "\n" . '{country}';
 				}
 
 				$find = array(
@@ -1662,10 +1662,10 @@ class ControllerSaleOrder extends Controller {
 				$replace = array(
 					'firstname' => $order_info['payment_firstname'],
 					'lastname'  => $order_info['payment_lastname'],
-					'company'   => $order_info['payment_company'],
+					//'company'   => $order_info['payment_company'],
 					'address_1' => $order_info['payment_address_1'],
-					'address_2' => $order_info['payment_address_2'],
-					'city'      => $order_info['payment_city'],
+					//'address_2' => $order_info['payment_address_2'],
+					//'city'      => $order_info['payment_city'],
 					'postcode'  => $order_info['payment_postcode'],
 					'zone'      => $order_info['payment_zone'],
 					'zone_code' => $order_info['payment_zone_code'],
@@ -1677,7 +1677,7 @@ class ControllerSaleOrder extends Controller {
 				if ($order_info['shipping_address_format']) {
 					$format = $order_info['shipping_address_format'];
 				} else {
-					$format = '{firstname} {lastname}' . "\n" . '{company}' . "\n" . '{address_1}' . "\n" . '{address_2}' . "\n" . '{city} {postcode}' . "\n" . '{zone}' . "\n" . '{country}';
+					$format = '{firstname} {lastname}' . "\n" . '{company}' . "\n" . '{address_1}' . "\n" . '{address_2}' . "\n" . '{zone} {postcode}' . "\n" . '{zone}' . "\n" . '{country}';
 				}
 
 				$find = array(
@@ -1696,10 +1696,10 @@ class ControllerSaleOrder extends Controller {
 				$replace = array(
 					'firstname' => $order_info['shipping_firstname'],
 					'lastname'  => $order_info['shipping_lastname'],
-					'company'   => $order_info['shipping_company'],
+					//'company'   => $order_info['shipping_company'],
 					'address_1' => $order_info['shipping_address_1'],
-					'address_2' => $order_info['shipping_address_2'],
-					'city'      => $order_info['shipping_city'],
+					//'address_2' => $order_info['shipping_address_2'],
+					//'city'      => $order_info['shipping_city'],
 					'postcode'  => $order_info['shipping_postcode'],
 					'zone'      => $order_info['shipping_zone'],
 					'zone_code' => $order_info['shipping_zone_code'],
@@ -1884,7 +1884,7 @@ class ControllerSaleOrder extends Controller {
 				if ($order_info['shipping_address_format']) {
 					$format = $order_info['shipping_address_format'];
 				} else {
-					$format = '{firstname} {lastname}' . "\n" . '{company}' . "\n" . '{address_1}' . "\n" . '{address_2}' . "\n" . '{city} {postcode}' . "\n" . '{zone}' . "\n" . '{country}';
+					$format = '{firstname} {lastname}' . "\n" . '{company}' . "\n" . '{address_1}' . "\n" . '{address_2}' . "\n" . '{zone} {postcode}' . "\n" . '{zone}' . "\n" . '{country}';
 				}
 
 				$find = array(
@@ -1903,10 +1903,10 @@ class ControllerSaleOrder extends Controller {
 				$replace = array(
 					'firstname' => $order_info['shipping_firstname'],
 					'lastname'  => $order_info['shipping_lastname'],
-					'company'   => $order_info['shipping_company'],
+					//'company'   => $order_info['shipping_company'],
 					'address_1' => $order_info['shipping_address_1'],
-					'address_2' => $order_info['shipping_address_2'],
-					'city'      => $order_info['shipping_city'],
+					//'address_2' => $order_info['shipping_address_2'],
+					//'city'      => $order_info['shipping_city'],
 					'postcode'  => $order_info['shipping_postcode'],
 					'zone'      => $order_info['shipping_zone'],
 					'zone_code' => $order_info['shipping_zone_code'],

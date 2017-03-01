@@ -101,12 +101,14 @@
                           <?php  } ?>
                         </div>
                       </div>
+                      <?php /*
                       <div class="form-group">
                         <label class="col-sm-2 control-label" for="input-fax"><?php echo $entry_fax; ?></label>
                         <div class="col-sm-10">
                           <input type="text" name="fax" value="<?php echo $fax; ?>" placeholder="<?php echo $entry_fax; ?>" id="input-fax" class="form-control" />
                         </div>
                       </div>
+                      */ ?>
                       <?php foreach ($custom_fields as $custom_field) { ?>
                       <?php if ($custom_field['location'] == 'account') { ?>
                       <?php if ($custom_field['type'] == 'select') { ?>
@@ -357,19 +359,11 @@
                           <?php } ?>
                         </div>
                       </div>
+                      <?php /*
                       <div class="form-group">
                         <label class="col-sm-2 control-label" for="input-company<?php echo $address_row; ?>"><?php echo $entry_company; ?></label>
                         <div class="col-sm-10">
                           <input type="text" name="address[<?php echo $address_row; ?>][company]" value="<?php echo $address['company']; ?>" placeholder="<?php echo $entry_company; ?>" id="input-company<?php echo $address_row; ?>" class="form-control" />
-                        </div>
-                      </div>
-                      <div class="form-group required">
-                        <label class="col-sm-2 control-label" for="input-address-1<?php echo $address_row; ?>"><?php echo $entry_address_1; ?></label>
-                        <div class="col-sm-10">
-                          <input type="text" name="address[<?php echo $address_row; ?>][address_1]" value="<?php echo $address['address_1']; ?>" placeholder="<?php echo $entry_address_1; ?>" id="input-address-1<?php echo $address_row; ?>" class="form-control" />
-                          <?php if (isset($error_address[$address_row]['address_1'])) { ?>
-                          <div class="text-danger"><?php echo $error_address[$address_row]['address_1']; ?></div>
-                          <?php } ?>
                         </div>
                       </div>
                       <div class="form-group">
@@ -387,15 +381,7 @@
                           <?php } ?>
                         </div>
                       </div>
-                      <div class="form-group required">
-                        <label class="col-sm-2 control-label" for="input-postcode<?php echo $address_row; ?>"><?php echo $entry_postcode; ?></label>
-                        <div class="col-sm-10">
-                          <input type="text" name="address[<?php echo $address_row; ?>][postcode]" value="<?php echo $address['postcode']; ?>" placeholder="<?php echo $entry_postcode; ?>" id="input-postcode<?php echo $address_row; ?>" class="form-control" />
-                          <?php if (isset($error_address[$address_row]['postcode'])) { ?>
-                          <div class="text-danger"><?php echo $error_address[$address_row]['postcode']; ?></div>
-                          <?php } ?>
-                        </div>
-                      </div>
+                      */ ?>
                       <div class="form-group required">
                         <label class="col-sm-2 control-label" for="input-country<?php echo $address_row; ?>"><?php echo $entry_country; ?></label>
                         <div class="col-sm-10">
@@ -421,6 +407,24 @@
                           </select>
                           <?php if (isset($error_address[$address_row]['zone'])) { ?>
                           <div class="text-danger"><?php echo $error_address[$address_row]['zone']; ?></div>
+                          <?php } ?>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-2 control-label" for="input-postcode<?php echo $address_row; ?>"><?php echo $entry_postcode; ?></label>
+                        <div class="col-sm-10">
+                          <input type="text" name="address[<?php echo $address_row; ?>][postcode]" value="<?php echo $address['postcode']; ?>" placeholder="<?php echo $entry_postcode; ?>" id="input-postcode<?php echo $address_row; ?>" class="form-control" />
+                          <?php if (isset($error_address[$address_row]['postcode'])) { ?>
+                          <div class="text-danger"><?php echo $error_address[$address_row]['postcode']; ?></div>
+                          <?php } ?>
+                        </div>
+                      </div>
+                      <div class="form-group required">
+                        <label class="col-sm-2 control-label" for="input-address-1<?php echo $address_row; ?>"><?php echo $entry_address_1; ?></label>
+                        <div class="col-sm-10">
+                          <input type="text" name="address[<?php echo $address_row; ?>][address_1]" value="<?php echo $address['address_1']; ?>" placeholder="<?php echo $entry_address_1; ?>" id="input-address-1<?php echo $address_row; ?>" class="form-control" />
+                          <?php if (isset($error_address[$address_row]['address_1'])) { ?>
+                          <div class="text-danger"><?php echo $error_address[$address_row]['address_1']; ?></div>
                           <?php } ?>
                         </div>
                       </div>

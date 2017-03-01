@@ -212,7 +212,7 @@ class ControllerAccountAddress extends Controller {
 			if ($result['address_format']) {
 				$format = $result['address_format'];
 			} else {
-				$format = '{firstname} {lastname}' . "\n" . '{company}' . "\n" . '{address_1}' . "\n" . '{address_2}' . "\n" . '{city} {postcode}' . "\n" . '{zone}' . "\n" . '{country}';
+				$format = '{firstname} {lastname}' . "\n" . '{company}' . "\n" . '{address_1}' . "\n" . '{address_2}' . "\n" . '{zone} {postcode}' . "\n" . '{zone}' . "\n" . '{country}';
 			}
 
 			$find = array(
@@ -231,10 +231,10 @@ class ControllerAccountAddress extends Controller {
 			$replace = array(
 				'firstname' => $result['firstname'],
 				'lastname'  => $result['lastname'],
-				'company'   => $result['company'],
+				//'company'   => $result['company'],
 				'address_1' => $result['address_1'],
-				'address_2' => $result['address_2'],
-				'city'      => $result['city'],
+				//'address_2' => $result['address_2'],
+				//'city'      => $result['city'],
 				'postcode'  => $result['postcode'],
 				'zone'      => $result['zone'],
 				'zone_code' => $result['zone_code'],
@@ -485,6 +485,12 @@ class ControllerAccountAddress extends Controller {
 	}
 
 	protected function validateForm() {
+
+        $ignore = array('city', 'address_2', 'company');
+        foreach ($ignore as $i) {
+            $this->request->post[$i] = 'Игнорируется';
+        }
+
 		if ((utf8_strlen(trim($this->request->post['firstname'])) < 1) || (utf8_strlen(trim($this->request->post['firstname'])) > 32)) {
 			$this->error['firstname'] = $this->language->get('error_firstname');
 		}

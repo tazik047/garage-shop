@@ -13,10 +13,10 @@ $_['text_delete']          = 'Ваш адрес был успешно удале
 $_['text_empty']           = 'Список адресов в аккаунте, пуст.';
 
 // Entry
-$_['entry_firstname']      = 'Имя, Отчество';
+$_['entry_firstname']      = 'Имя';
 $_['entry_lastname']       = 'Фамилия';
 $_['entry_company']        = 'Компания';
-$_['entry_address_1']      = 'Адрес 1';
+$_['entry_address_1']      = 'Адрес';
 $_['entry_address_2']      = 'Адрес 2';
 $_['entry_postcode']       = 'Почтовый индекс';
 $_['entry_city']           = 'Город';

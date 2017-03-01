@@ -1010,6 +1010,12 @@ class ControllerCustomerCustomer extends Controller {
 	}
 
 	protected function validateForm() {
+
+        $ignore = array('fax');
+        foreach ($ignore as $i) {
+            $this->request->post[$i] = 'Игнорируется';
+        }
+
 		if (!$this->user->hasPermission('modify', 'customer/customer')) {
 			$this->error['warning'] = $this->language->get('error_permission');
 		}
@@ -1067,6 +1073,12 @@ class ControllerCustomerCustomer extends Controller {
 
 		if (isset($this->request->post['address'])) {
 			foreach ($this->request->post['address'] as $key => $value) {
+
+                $ignore = array('city', 'address_2', 'company');
+                foreach ($ignore as $i) {
+                    $value[$i] = 'Игнорируется';
+                }
+
 				if ((utf8_strlen($value['firstname']) < 1) || (utf8_strlen($value['firstname']) > 32)) {
 					$this->error['address'][$key]['firstname'] = $this->language->get('error_firstname');
 				}

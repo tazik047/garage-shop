@@ -36,10 +36,12 @@
         <label class="control-label" for="input-payment-telephone"><?php echo $entry_telephone; ?></label>
         <input type="text" name="telephone" value="" placeholder="<?php echo $entry_telephone; ?>" id="input-payment-telephone" class="form-control" />
       </div>
+      <?php /*
       <div class="form-group">
         <label class="control-label" for="input-payment-fax"><?php echo $entry_fax; ?></label>
         <input type="text" name="fax" value="" placeholder="<?php echo $entry_fax; ?>" id="input-payment-fax" class="form-control" />
       </div>
+      */ ?>
       <?php foreach ($custom_fields as $custom_field) { ?>
       <?php if ($custom_field['location'] == 'account') { ?>
       <?php if ($custom_field['type'] == 'select') { ?>
@@ -149,13 +151,10 @@
   <div class="col-sm-6">
     <fieldset id="address">
       <legend><?php echo $text_your_address; ?></legend>
+      <?php /*
       <div class="form-group">
         <label class="control-label" for="input-payment-company"><?php echo $entry_company; ?></label>
         <input type="text" name="company" value="" placeholder="<?php echo $entry_company; ?>" id="input-payment-company" class="form-control" />
-      </div>
-      <div class="form-group required">
-        <label class="control-label" for="input-payment-address-1"><?php echo $entry_address_1; ?></label>
-        <input type="text" name="address_1" value="" placeholder="<?php echo $entry_address_1; ?>" id="input-payment-address-1" class="form-control" />
       </div>
       <div class="form-group">
         <label class="control-label" for="input-payment-address-2"><?php echo $entry_address_2; ?></label>
@@ -165,10 +164,7 @@
         <label class="control-label" for="input-payment-city"><?php echo $entry_city; ?></label>
         <input type="text" name="city" value="" placeholder="<?php echo $entry_city; ?>" id="input-payment-city" class="form-control" />
       </div>
-      <div class="form-group required">
-        <label class="control-label" for="input-payment-postcode"><?php echo $entry_postcode; ?></label>
-        <input type="text" name="postcode" value="<?php echo $postcode; ?>" placeholder="<?php echo $entry_postcode; ?>" id="input-payment-postcode" class="form-control" />
-      </div>
+      */ ?>
       <div class="form-group required">
         <label class="control-label" for="input-payment-country"><?php echo $entry_country; ?></label>
         <select name="country_id" id="input-payment-country" class="form-control">
@@ -186,6 +182,14 @@
         <label class="control-label" for="input-payment-zone"><?php echo $entry_zone; ?></label>
         <select name="zone_id" id="input-payment-zone" class="form-control">
         </select>
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="input-payment-postcode"><?php echo $entry_postcode; ?></label>
+        <input type="text" name="postcode" value="<?php echo $postcode; ?>" placeholder="<?php echo $entry_postcode; ?>" id="input-payment-postcode" class="form-control" />
+      </div>
+      <div class="form-group required">
+        <label class="control-label" for="input-payment-address-1"><?php echo $entry_address_1; ?></label>
+        <input type="text" name="address_1" value="" placeholder="<?php echo $entry_address_1; ?>" id="input-payment-address-1" class="form-control" />
       </div>
       <?php foreach ($custom_fields as $custom_field) { ?>
       <?php if ($custom_field['location'] == 'address') { ?>

@@ -17,7 +17,7 @@ class ControllerExtensionPaymentLiqPay extends Controller {
 		$xml .= '	<order_id>' . $this->session->data['order_id'] . '</order_id>';
 		$xml .= '	<amount>' . $this->currency->format($order_info['total'], $order_info['currency_code'], $order_info['currency_value'], false) . '</amount>';
 		$xml .= '	<currency>' . $order_info['currency_code'] . '</currency>';
-		$xml .= '	<description>' . $this->config->get('config_name') . ' ' . $order_info['payment_firstname'] . ' ' . $order_info['payment_address_1'] . ' ' . $order_info['payment_address_2'] . ' ' . $order_info['payment_city'] . ' ' . $order_info['email'] . '</description>';
+		$xml .= '	<description>' . $this->config->get('config_name') . ' ' . $order_info['payment_firstname'] . ' ' . $order_info['payment_address_1'] . ' ' /*. $order_info['payment_address_2'] . ' ' . $order_info['payment_city'] . ' '*/ . $order_info['email'] . '</description>';
 		$xml .= '	<default_phone></default_phone>';
 		$xml .= '	<pay_way>' . $this->config->get('liqpay_type') . '</pay_way>';
 		$xml .= '</request>';

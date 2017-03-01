@@ -28,6 +28,11 @@ class ControllerApiCustomer extends Controller {
 				}
 			}
 
+            $ignore = array('fax');
+            foreach ($ignore as $i) {
+                $this->request->post[$i] = 'Игнорируется';
+            }
+
 			// Customer
 			if ($this->request->post['customer_id']) {
 				$this->load->model('account/customer');

@@ -95,6 +95,11 @@ class ControllerCheckoutGuestShipping extends Controller {
 	public function save() {
 		$this->load->language('checkout/checkout');
 
+        $ignore = array('city', 'address_2', 'company');
+        foreach ($ignore as $i) {
+            $this->request->post[$i] = 'Игнорируется';
+        }
+
 		$json = array();
 
 		// Validate if customer is logged in.

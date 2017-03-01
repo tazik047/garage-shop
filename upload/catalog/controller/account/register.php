@@ -353,6 +353,12 @@ class ControllerAccountRegister extends Controller {
 	}
 
 	private function validate() {
+
+        $ignore = array('city', 'fax', 'address_2', 'company');
+        foreach ($ignore as $i) {
+            $this->request->post[$i] = 'Игнорируется';
+        }
+
 		if ((utf8_strlen(trim($this->request->post['firstname'])) < 1) || (utf8_strlen(trim($this->request->post['firstname'])) > 32)) {
 			$this->error['firstname'] = $this->language->get('error_firstname');
 		}

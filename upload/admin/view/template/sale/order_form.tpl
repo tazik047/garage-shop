@@ -100,12 +100,14 @@
                   <input type="text" name="telephone" value="<?php echo $telephone; ?>" id="input-telephone" class="form-control" />
                 </div>
               </div>
+              <?php /*
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-fax"><?php echo $entry_fax; ?></label>
                 <div class="col-sm-10">
                   <input type="text" name="fax" value="<?php echo $fax; ?>" id="input-fax" class="form-control" />
                 </div>
               </div>
+              */ ?>
               <?php foreach ($custom_fields as $custom_field) { ?>
               <?php if ($custom_field['location'] == 'account') { ?>
               <?php if ($custom_field['type'] == 'select') { ?>
@@ -406,7 +408,7 @@
                   <select name="payment_address" id="input-payment-address" class="form-control">
                     <option value="0" selected="selected"><?php echo $text_none; ?></option>
                     <?php foreach ($addresses as $address) { ?>
-                    <option value="<?php echo $address['address_id']; ?>"><?php echo $address['firstname'] . ' ' . $address['lastname'] . ', ' . $address['address_1'] . ', ' . $address['city'] . ', ' . $address['country']; ?></option>
+                    <option value="<?php echo $address['address_id']; ?>"><?php echo $address['firstname'] . ' ' . $address['lastname'] . ', ' . $address['address_1'] . ', ' . $address['zone'] . ', ' . $address['country']; ?></option>
                     <?php } ?>
                   </select>
                 </div>
@@ -423,16 +425,11 @@
                   <input type="text" name="lastname" value="<?php echo $payment_lastname; ?>" id="input-payment-lastname" class="form-control" />
                 </div>
               </div>
+              <?php /*
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-payment-company"><?php echo $entry_company; ?></label>
                 <div class="col-sm-10">
                   <input type="text" name="company" value="<?php echo $payment_company; ?>" id="input-payment-company" class="form-control" />
-                </div>
-              </div>
-              <div class="form-group required">
-                <label class="col-sm-2 control-label" for="input-payment-address-1"><?php echo $entry_address_1; ?></label>
-                <div class="col-sm-10">
-                  <input type="text" name="address_1" value="<?php echo $payment_address_1; ?>" id="input-payment-address-1" class="form-control" />
                 </div>
               </div>
               <div class="form-group">
@@ -447,12 +444,7 @@
                   <input type="text" name="city" value="<?php echo $payment_city; ?>" id="input-payment-city" class="form-control" />
                 </div>
               </div>
-              <div class="form-group required">
-                <label class="col-sm-2 control-label" for="input-payment-postcode"><?php echo $entry_postcode; ?></label>
-                <div class="col-sm-10">
-                  <input type="text" name="postcode" value="<?php echo $payment_postcode; ?>" id="input-payment-postcode" class="form-control" />
-                </div>
-              </div>
+              */ ?>
               <div class="form-group required">
                 <label class="col-sm-2 control-label" for="input-payment-country"><?php echo $entry_country; ?></label>
                 <div class="col-sm-10">
@@ -473,6 +465,18 @@
                 <div class="col-sm-10">
                   <select name="zone_id" id="input-payment-zone" class="form-control">
                   </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-payment-postcode"><?php echo $entry_postcode; ?></label>
+                <div class="col-sm-10">
+                  <input type="text" name="postcode" value="<?php echo $payment_postcode; ?>" id="input-payment-postcode" class="form-control" />
+                </div>
+              </div>
+              <div class="form-group required">
+                <label class="col-sm-2 control-label" for="input-payment-address-1"><?php echo $entry_address_1; ?></label>
+                <div class="col-sm-10">
+                  <input type="text" name="address_1" value="<?php echo $payment_address_1; ?>" id="input-payment-address-1" class="form-control" />
                 </div>
               </div>
               <?php foreach ($custom_fields as $custom_field) { ?>
@@ -617,7 +621,7 @@
                   <select name="shipping_address" id="input-shipping-address" class="form-control">
                     <option value="0" selected="selected"><?php echo $text_none; ?></option>
                     <?php foreach ($addresses as $address) { ?>
-                    <option value="<?php echo $address['address_id']; ?>"><?php echo $address['firstname'] . ' ' . $address['lastname'] . ', ' . $address['address_1'] . ', ' . $address['city'] . ', ' . $address['country']; ?></option>
+                    <option value="<?php echo $address['address_id']; ?>"><?php echo $address['firstname'] . ' ' . $address['lastname'] . ', ' . $address['address_1'] . ', ' . $address['zone'] . ', ' . $address['country']; ?></option>
                     <?php } ?>
                   </select>
                 </div>
@@ -634,16 +638,11 @@
                   <input type="text" name="lastname" value="<?php echo $shipping_lastname; ?>" id="input-shipping-lastname" class="form-control" />
                 </div>
               </div>
+              <?php /*
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-shipping-company"><?php echo $entry_company; ?></label>
                 <div class="col-sm-10">
                   <input type="text" name="company" value="<?php echo $shipping_company; ?>" id="input-shipping-company" class="form-control" />
-                </div>
-              </div>
-              <div class="form-group required">
-                <label class="col-sm-2 control-label" for="input-shipping-address-1"><?php echo $entry_address_1; ?></label>
-                <div class="col-sm-10">
-                  <input type="text" name="address_1" value="<?php echo $shipping_address_1; ?>" id="input-shipping-address-1" class="form-control" />
                 </div>
               </div>
               <div class="form-group">
@@ -658,12 +657,11 @@
                   <input type="text" name="city" value="<?php echo $shipping_city; ?>" id="input-shipping-city" class="form-control" />
                 </div>
               </div>
-              <div class="form-group required">
-                <label class="col-sm-2 control-label" for="input-shipping-postcode"><?php echo $entry_postcode; ?></label>
-                <div class="col-sm-10">
-                  <input type="text" name="postcode" value="<?php echo $shipping_postcode; ?>" id="input-shipping-postcode" class="form-control" />
-                </div>
-              </div>
+              */ ?>
+
+
+
+
               <div class="form-group required">
                 <label class="col-sm-2 control-label" for="input-shipping-country"><?php echo $entry_country; ?></label>
                 <div class="col-sm-10">
@@ -684,6 +682,18 @@
                 <div class="col-sm-10">
                   <select name="zone_id" id="input-shipping-zone" class="form-control">
                   </select>
+                </div>
+              </div>
+              <div class="form-group required">
+                <label class="col-sm-2 control-label" for="input-shipping-postcode"><?php echo $entry_postcode; ?></label>
+                <div class="col-sm-10">
+                  <input type="text" name="postcode" value="<?php echo $shipping_postcode; ?>" id="input-shipping-postcode" class="form-control" />
+                </div>
+              </div>
+              <div class="form-group required">
+                <label class="col-sm-2 control-label" for="input-shipping-address-1"><?php echo $entry_address_1; ?></label>
+                <div class="col-sm-10">
+                  <input type="text" name="address_1" value="<?php echo $shipping_address_1; ?>" id="input-shipping-address-1" class="form-control" />
                 </div>
               </div>
               <?php foreach ($custom_fields as $custom_field) { ?>
