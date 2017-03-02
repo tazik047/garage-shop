@@ -1,4 +1,3 @@
-</div>
 <footer>
   <div class="container">
     <div class="row">
@@ -27,13 +26,6 @@
           <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
           <li><a href="<?php echo $affiliate; ?>"><?php echo $text_affiliate; ?></a></li>
           <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
-        </ul>
-        <h5><?php echo $text_account; ?></h5>
-        <ul class="list-unstyled">
-          <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
-          <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
-          <li><a href="<?php echo $wishlist; ?>"><?php echo $text_wishlist; ?></a></li>
-          <li><a href="<?php echo $newsletter; ?>"><?php echo $text_newsletter; ?></a></li>
         </ul>
       </div>
       <?php 
