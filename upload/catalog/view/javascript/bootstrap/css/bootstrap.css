@@ -1460,7 +1460,7 @@ dd {
     clear: left;
     text-align: right;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: pre-wrap;
   }
   .dl-horizontal dd {
     margin-left: 180px;
@@ -2461,7 +2461,7 @@ table th[class*="col-"] {
   .table-responsive > .table > thead > tr > td,
   .table-responsive > .table > tbody > tr > td,
   .table-responsive > .table > tfoot > tr > td {
-    white-space: nowrap;
+    white-space: pre-wrap;
   }
   .table-responsive > .table-bordered {
     border: 0;
