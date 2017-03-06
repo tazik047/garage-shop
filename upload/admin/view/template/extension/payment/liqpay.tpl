@@ -44,18 +44,18 @@
             </div>
           </div>
           <div class="form-group">
-            <label class="col-sm-2 control-label" for="input-type"><?php echo $entry_type; ?></label>
+            <label class="col-sm-2 control-label" for="input-type"><?php echo $entry_sandbox; ?></label>
             <div class="col-sm-10">
-              <select name="liqpay_type" id="input-type" class="form-control">
-                <?php if ($liqpay_type == 'liqpay') { ?>
-                <option value="liqpay" selected="selected"><?php echo $text_pay; ?></option>
+              <select name="liqpay_sandbox" id="input-type" class="form-control">
+                <?php if ($liqpay_sandbox == 'paybox') { ?>
+                <option value="paybox" selected="selected"><?php echo $text_paybox; ?></option>
                 <?php } else { ?>
-                <option value="liqpay"><?php echo $text_pay; ?></option>
+                <option value="paybox"><?php echo $text_paybox; ?></option>
                 <?php } ?>
-                <?php if ($liqpay_type == 'card') { ?>
-                <option value="card" selected="selected"><?php echo $text_card; ?></option>
+                <?php if ($liqpay_sandbox == 'sandbox') { ?>
+                <option value="sandbox" selected="selected"><?php echo $text_sandbox; ?></option>
                 <?php } else { ?>
-                <option value="card"><?php echo $text_card; ?></option>
+                <option value="sandbox"><?php echo $text_sandbox; ?></option>
                 <?php } ?>
               </select>
             </div>
@@ -66,12 +66,13 @@
               <input type="text" name="liqpay_total" value="<?php echo $liqpay_total; ?>" placeholder="<?php echo $entry_total; ?>" id="input-total" class="form-control" />
             </div>
           </div>
+
           <div class="form-group">
-            <label class="col-sm-2 control-label" for="input-order-status"><?php echo $entry_order_status; ?></label>
+            <label class="col-sm-2 control-label" for="input-success-status"><?php echo $entry_success; ?></label>
             <div class="col-sm-10">
-              <select name="liqpay_order_status_id" id="input-order-status" class="form-control">
+              <select name="liqpay_success_status_id" id="input-success-status" class="form-control">
                 <?php foreach ($order_statuses as $order_status) { ?>
-                <?php if ($order_status['order_status_id'] == $liqpay_order_status_id) { ?>
+                <?php if ($order_status['order_status_id'] == $liqpay_success_status_id) { ?>
                 <option value="<?php echo $order_status['order_status_id']; ?>" selected="selected"><?php echo $order_status['name']; ?></option>
                 <?php } else { ?>
                 <option value="<?php echo $order_status['order_status_id']; ?>"><?php echo $order_status['name']; ?></option>
@@ -80,6 +81,22 @@
               </select>
             </div>
           </div>
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-failure-status"><?php echo $entry_failure; ?></label>
+            <div class="col-sm-10">
+              <select name="liqpay_failure_status_id" id="input-failure-status" class="form-control">
+                <?php foreach ($order_statuses as $order_status) { ?>
+                <?php if ($order_status['order_status_id'] == $liqpay_failure_status_id) { ?>
+                <option value="<?php echo $order_status['order_status_id']; ?>" selected="selected"><?php echo $order_status['name']; ?></option>
+                <?php } else { ?>
+                <option value="<?php echo $order_status['order_status_id']; ?>"><?php echo $order_status['name']; ?></option>
+                <?php } ?>
+                <?php } ?>
+              </select>
+            </div>
+          </div>   
+
           <div class="form-group">
             <label class="col-sm-2 control-label" for="input-geo-zone"><?php echo $entry_geo_zone; ?></label>
             <div class="col-sm-10">
