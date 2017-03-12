@@ -5,19 +5,19 @@
 @link   http://www.opencart.com/index.php?route=extension/extension/info&extension_id=4811
 */ 
 
-include_once(DIR_SYSTEM . 'library/simple/simple.php');
+include_once(DIR_SYSTEM . 'helper/simple/simple.php');
 
 class SimpleEdit extends Simple {
     protected static $_instance;
     
-    protected function __construct($registry) {
+    protected function __construct($registry, $isAdminPage) {
         $this->setPage('edit');
-        parent::__construct($registry);
+        parent::__construct($registry, $isAdminPage);
     }    
 
-    public static function getInstance($registry) {
+    public static function getInstance($registry, $isAdminPage = false) {
         if (self::$_instance === null) {
-            self::$_instance = new self($registry);  
+            self::$_instance = new self($registry, $isAdminPage);  
         }
 
         return self::$_instance;

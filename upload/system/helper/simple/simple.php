@@ -1210,7 +1210,8 @@ class Simple {
         if (!empty($rowSettings['masterField'])) {
             $masterValue = $this->getMasterFieldValue($rowSettings['masterField']);
             if (is_array($masterValue) && is_array($rowSettings['displayWhen'])) {
-                $result = true;
+
+                $result = count($rowSettings['displayWhen']) == 0;
                 foreach ($rowSettings['displayWhen'] as $key => $value) {
                     if (!$value) {
                         continue;

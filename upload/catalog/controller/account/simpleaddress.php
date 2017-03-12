@@ -12,7 +12,7 @@ class ControllerAccountSimpleaddress extends SimpleController {
 
     public function insert($args = null) {
 
-        $this->load->library('simple/simpleaddress');
+        $this->load->helper('simple/simpleaddress');
 
         $this->simpleaddress = Simpleaddress::getInstance($this->registry);
         
@@ -119,7 +119,7 @@ class ControllerAccountSimpleaddress extends SimpleController {
 
     public function update($args = null) {
 
-        $this->load->library('simple/simpleaddress');
+        $this->load->helper('simple/simpleaddress');
 
         $this->simpleaddress = Simpleaddress::getInstance($this->registry);
         
@@ -199,7 +199,7 @@ class ControllerAccountSimpleaddress extends SimpleController {
                 unset($this->session->data['payment_methods']);
             }
             
-            $this->session->data['success'] = $this->language->get('text_update');
+            $this->session->data['success'] = $this->language->get('text_edit');
 
             if ($this->simpleaddress->isAjaxRequest()) {
                $this->_templateData['redirect'] = $this->url->link('account/address', '', 'SSL');

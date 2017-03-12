@@ -19,7 +19,7 @@ class ModelExtensionShippingNovaPoshta extends Model {
 		$method_data = array(  );
 
 		if ($status) {
-			$cost = 511;
+			$cost = 0;
 			$period = 511;
 			$recipient = '';
 
@@ -62,10 +62,10 @@ class ModelExtensionShippingNovaPoshta extends Model {
 			}
 
 
-			if (( $this->config->get( 'novaposhta_delivery_period' ) && $recipient )) {
+			/*if (( $this->config->get( 'novaposhta_delivery_period' ) && $recipient )) {
 				$properties = array( 'CitySender' => $this->config->get( 'novaposhta_sender_city' ), 'CityRecipient' => $recipient, 'ServiceType' => $this->config->get( 'novaposhta_service_type' ) );
 				$period = $novaposhta->getDocumentDeliveryDate( $properties );
-			}
+			}*/
 
 			$quote_data = array(  );
 			$quote_data['novaposhta'] = array( 

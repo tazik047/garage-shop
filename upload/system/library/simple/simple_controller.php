@@ -17,6 +17,7 @@ class SimpleController extends Controller {
     }
 
     public function renderPage($template, $templateData, $childrens = array()) {
+
         if ($this->_opencartVersion < 200) {
             $this->data = $templateData;
 

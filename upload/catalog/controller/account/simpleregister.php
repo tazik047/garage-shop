@@ -12,7 +12,7 @@ class ControllerAccountSimpleRegister extends SimpleController {
 
     public function index($args = null) {
 
-        $this->load->library('simple/simpleregister');
+        $this->load->helper('simple/simpleregister');
 
         $this->simpleregister = SimpleRegister::getInstance($this->registry);
         

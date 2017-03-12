@@ -458,14 +458,18 @@ class ControllerCheckoutSimpleCheckoutCart extends SimpleController {
         if (!isset($this->session->data['vouchers'])) {
             $this->session->data['vouchers'] = array();
         }
-        
+
         // Update
         if (!empty($this->request->post['quantity'])) {
-            $keys =  isset($this->session->data['cart']) ? $this->session->data['cart'] : array();
+            /*$keys =  isset($this->session->data['cart']) ? $this->session->data['cart'] : array();
             foreach ($this->request->post['quantity'] as $key => $value) {
                 if (!empty($keys) && array_key_exists($key, $keys)) {
                     $this->cart->update($key, $value);
                 }
+            }*/
+
+            foreach ($this->request->post['quantity'] as $key => $value) {
+                $this->cart->update($key, $value);
             }
         }
         
@@ -502,9 +506,9 @@ class ControllerCheckoutSimpleCheckoutCart extends SimpleController {
 
         if (!$this->cart->hasProducts() && empty($this->session->data['vouchers'])) {
             if (!$this->simplecheckout->isAjaxRequest()) {
-                $this->simplecheckout->redirect($this->url->link('checkout/simplecheckout', '', 'SSL'));                
+                $this->simplecheckout->redirect($this->url->link('checkout/simplecheckout', '', true));                
             } else {
-               $this->simplecheckout->setRedirectUrl($this->url->link('checkout/simplecheckout', '', 'SSL'));    
+               $this->simplecheckout->setRedirectUrl($this->url->link('checkout/simplecheckout', '', true));    
             }
         }
 

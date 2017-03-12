@@ -23,6 +23,16 @@ class ControllerCheckoutSimpleCheckout extends SimpleController {
             $this->simplecheckout->redirect($this->url->link('account/login','','SSL'));
         }
 
+
+    			
+    				/* Nova Poshta */
+    				$this->language->load('shipping/novaposhta');
+					$this->_templateData['entry_warehouses'] = $this->language->get('entry_warehouses');
+					$this->_templateData['entry_address_1'] = $this->language->get('entry_address_1');
+					$this->_templateData['text_select'] = $this->language->get('text_select');
+					/* Nova Poshta */
+	
+				
         $this->language->load('checkout/checkout');
         $this->language->load('checkout/simplecheckout');
         

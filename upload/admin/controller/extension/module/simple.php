@@ -52,15 +52,12 @@ class ControllerExtensionModuleSimple extends SimpleController{
 
         if (($this->request->server['REQUEST_METHOD'] == 'POST' && $this->validate())) {
 
+            $data = array();
 
             if(!empty($this->request->files['import']) && $this->request->files['import']['size']>0){
-                print '<pre>';
-                print_r($this->request->files);
-                die('Implement file loading');
+                $data['simple_settings'] = htmlspecialchars_decode(file_get_contents($this->request->files['import']['tmp_name']));
             }
             else {
-
-                $data = array();
                 if (!empty($this->request->post['simple_settings'])) {
                     $data['simple_settings'] = htmlspecialchars_decode($this->request->post['simple_settings']);
                 }
@@ -88,20 +85,17 @@ class ControllerExtensionModuleSimple extends SimpleController{
                 if (!empty($this->request->post['simple_replace_address'])) {
                     $data['simple_replace_address'] = $this->request->post['simple_replace_address'];
                 }
-
-                $this->load->model( 'setting/setting' );
-                $settings = $this->model_setting_setting->getSetting( $this->settingName, $this->getStoreId() );
-
-                $data = array_merge($settings, $data);
-
-                /*print '<pre>';
-                print_r($data);
-                die('Implement saving');*/
-
-                $this->model_setting_setting->editSetting($this->settingName, $data, $this->getStoreId());
-                $this->_settings = null;
-                $this->loadSavedSettings();
             }
+
+            $this->load->model( 'setting/setting' );
+            $settings = $this->model_setting_setting->getSetting( $this->settingName, $this->getStoreId() );
+
+            $data = array_merge($settings, $data);
+
+            $this->model_setting_setting->editSetting($this->settingName, $data, $this->getStoreId());
+            $this->_settings = null;
+            $this->loadSavedSettings();
+
             $this->_templateData['success'] = $this->language->get('text_success');
 
 

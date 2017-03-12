@@ -208,7 +208,7 @@ class ControllerCheckoutSimpleCheckoutPayment extends SimpleController {
         $this->_templateData['error_no_payment']             = sprintf($this->language->get('error_no_payment'), $this->url->link('information/contact'));
         $this->_templateData['display_type']                 = $this->simplecheckout->getPaymentDisplayType();
 
-        $this->simplecheckout->resetCurrentBlock();   
+        $this->simplecheckout->resetCurrentBlock();
 
         $this->setOutputContent($this->renderPage('checkout/simplecheckout_payment.tpl', $this->_templateData));
     }

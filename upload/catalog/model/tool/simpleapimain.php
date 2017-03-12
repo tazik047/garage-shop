@@ -78,6 +78,7 @@ class ModelToolSimpleApiMain extends Model {
     }
 
     public function getCountries($filter = '') {
+
         $values = array(
             array(
                 'id'   => '', 
@@ -107,6 +108,7 @@ class ModelToolSimpleApiMain extends Model {
     }
 
     public function getZones($countryId) {
+
         $values = array(
             array(
                 'id'   => '', 
@@ -136,6 +138,7 @@ class ModelToolSimpleApiMain extends Model {
     }
 
     public function getCities($zoneId) {
+
         $values = array(
             array(
                 'id'   => '', 
@@ -320,10 +323,6 @@ class ModelToolSimpleApiMain extends Model {
         return '';
     }
 
-    public function getDefaultZone() {
-        return '';
-    }
-
     public function getDefaultCity() {
         return '';
     }
@@ -335,5 +334,13 @@ class ModelToolSimpleApiMain extends Model {
     // example of code for getting a mask of field
     public function getTelephoneMask($country) {
         return '99999';
+    }
+
+    private function getAddressById($id){
+        $this->load->language('checkout/simplecheckout');
+        $this->load->model('account/address');
+
+        $addresses = $this->model_account_address->getAddresses();
+        return $addresses[$id];
     }
 }

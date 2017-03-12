@@ -254,6 +254,12 @@ $('#input-sender').change(function (e) {
 	getData('sender-contact-person');
 });
 
+$('#input-sender-address').change(function (e) {
+	var v = $(this).val();
+	var city = $('option[value=' + v + ']').attr('data-city');
+	$('#input-sender-city').val(city);
+});
+
 $('input[name = novaposhta_cost]').change(function (e) {	
 	if(e.target.checked == false) {
 		$('input[name = novaposhta_free_shipping]').attr('readonly', true);
@@ -264,9 +270,11 @@ $('input[name = novaposhta_cost]').change(function (e) {
 
 function getData(type) {
 	var checked, filter;
+	var attr = doNothing;
 	switch(type) {
 		case 'sender-address':
 			method = 'getAddress';
+			attr = addAddressAttributes;
 			if (!$('#input-sender').val()) {
 				filter = '&filter=<?php echo $novaposhta_sender; ?>';
 			} else {
@@ -291,14 +299,22 @@ function getData(type) {
 			var html = '<option value="0"><?php echo $text_select; ?></option>';
 			for (var i in json) {
 				if (json[i]['Ref'] == checked) {
-					html += '<option value="' + json[i]['Ref'] + '" selected="selected">' + json[i]['Description'] + '</option>';
+					html += '<option value="' + json[i]['Ref'] + '" selected="selected" '+attr(json[i])+'>' + json[i]['Description'] + '</option>';
 				} else {
-					html += '<option value="' + json[i]['Ref'] + '">' + json[i]['Description'] + '</option>';
+					html += '<option value="' + json[i]['Ref'] + '"'+attr(json[i])+'>' + json[i]['Description'] + '</option>';
 				}
 			}
 			$('#input-' + type).html(html);
 		}
 	} );
+}
+
+function doNothing($obj) {
+	return '';
+}
+
+function addAddressAttributes($obj){
+    return ' data-city="' + $obj['CityRef'] + '"';
 }
     
 function update(type) {

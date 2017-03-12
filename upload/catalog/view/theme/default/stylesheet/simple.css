@@ -420,7 +420,9 @@
     border-radius: 5px 5px 5px 5px;
     background: url("../image/warning.png") no-repeat scroll 10px center #FFD1D1;
     color: #555555;
+	background-size: 30px;
     text-align: left;
+    padding-left: 50px;
 }
 .simpleregister-warning-block {
     margin-bottom: 15px;

@@ -235,7 +235,6 @@ class SimpleCheckout extends Simple {
                                     " . ($version < 200 ? (DB_PREFIX . "order_download,") : "") . "
                                     " . DB_PREFIX . "order_total"
                                     . ($version >= 152 ? "," . DB_PREFIX . "order_voucher" : "") .
-                                    ($version >= 152 ? "," . DB_PREFIX . "order_fraud" : "") .
                             " FROM
                                 `" . DB_PREFIX . "order`
                             LEFT JOIN
@@ -268,11 +267,6 @@ class SimpleCheckout extends Simple {
                                 " . DB_PREFIX . "order_voucher
                             ON
                                 " . DB_PREFIX . "order_voucher.order_id = `" . DB_PREFIX . "order`.order_id" : "")
-                            . ($version >= 152 ? " 
-                            LEFT JOIN
-                                " . DB_PREFIX . "order_fraud
-                            ON
-                                " . DB_PREFIX . "order_fraud.order_id = `" . DB_PREFIX . "order`.order_id" : "")
                             . ($order_pending ? " LEFT JOIN
                                 " . DB_PREFIX . "order_pending
                             ON
