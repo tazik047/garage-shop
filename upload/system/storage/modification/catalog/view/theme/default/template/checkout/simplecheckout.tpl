@@ -163,10 +163,13 @@ document.body.addEventListener('change',
 	true
 );	
 
+function isFieldsVisible() {
+	return $('[name *= zone_id]').attr('type')!=="hidden";
+}
+
 function checkEvent(e) {
 	console.log('-call method "checkEvent(e)"');
-	var isVisible = $('[name *= zone_id]').attr('type')!=="hidden";
-	if(!isVisible){
+	if(!isFieldsVisible()){
 		return;
 	}
 	
@@ -304,7 +307,7 @@ function copyAttributes(from_element, to_element) {
 }
 
 $(function() {
-	if (shipping == 'novaposhta.novaposhta') {
+	if (shipping == 'novaposhta.novaposhta' && isFieldsVisible()) {
 		$('[name *= city]').val('');
 		$('[name *= zone]').prop('selectedIndex', 0);
 	}
