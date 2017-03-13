@@ -33,7 +33,7 @@ class ControllerStartupStartup extends Controller {
 		}
 
 		// Url
-		$this->registry->set('url', new Url($this->config->get('config_url'), $this->config->get('config_ssl')));
+		$this->registry->set('url', new Url($this->config->get('config_url'), $this->config->get('config_ssl'), $this->config));
 		
 		// Language
 		$code = '';

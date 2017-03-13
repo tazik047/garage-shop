@@ -1,50 +1,74 @@
 <?php
-
-/**
- * OpenCart Ukrainian Community
- * Made in Ukraine
- *
- * LICENSE
- *
- * This source file is subject to the GNU General Public License, Version 3
- * It is also available through the world-wide-web at this URL:
- * http://www.gnu.org/copyleft/gpl.html
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- *
- * @category   OpenCart
- * @package    OCU Nova Poshta
- * @copyright  Copyright (c) 2011 Eugene Lifescale (a.k.a. Shaman) by OpenCart Ukrainian Community (http://opencart-ukraine.tumblr.com)
- * @license    http://www.gnu.org/copyleft/gpl.html     GNU General Public License, Version 3
- * @version    $Id: catalog/model/shipping/ocu_ukrposhta.php 1.2 2014-12-27 19:18:40
- */
-/**
- * @category   OpenCart
- * @package    OCU OCU Nova Poshta
- * @copyright  Copyright (c) 2011 Eugene Lifescale (a.k.a. Shaman) by OpenCart Ukrainian Community (http://opencart-ukraine.tumblr.com)
- * @license    http://www.gnu.org/copyleft/gpl.html     GNU General Public License, Version 3
- */
-
 // Heading
-$_['heading_title']             = 'Доставка Новой Почтой';
+$_['heading_title']				= 'Новая Почта';
+
+//Button
+$_['button_save_and_stay']		= 'Сохранить и остаться';
+
+// Column
+$_['column_type']           	= 'Тип данных';
+$_['column_date']				= 'Последнее обновление';
+$_['column_amount']				= 'Количество';
+$_['column_description']   		= 'Описание';
+$_['column_action']         	= 'Действие';
 
 // Text
-$_['text_shipping']             = 'Модули доставки';
-$_['text_success']              = 'Настройки модуля обновлены!';
-$_['text_edit']        			= 'Редактировать модль';
+$_['text_shipping']    			= 'Доставка';
+$_['text_success']     			= 'Вы успешно изменили настройки модуля доставки компанией &laquo;Новая Почта&raquo;';
+$_['text_edit_p']        		= 'Настройки модуля доставки компанией &laquo;Новая Почта&raquo;';
+$_['text_update'] 				= 'Обновить данные';
+$_['text_update_success'] 		= 'Данные успешно обновлены';
 
 // Entry
-$_['entry_tax_class']           = 'Класс налога:';
-$_['entry_geo_zone']            = 'Географическая зона:';
-$_['entry_status']              = 'Статус:';
-$_['entry_sort_order']          = 'Порядок сортировки:';
-$_['entry_api_key']             = 'Ключ API:';
-$_['entry_sender_city']         = 'Город отправки:';
-$_['entry_sender_warehouse']    = 'Адрес отправки:';
-$_['entry_send_order_status']   = 'Статус отправленной посылки:';
-$_['entry_sender_organization'] = 'Отправитель:';
-$_['entry_sender_person']       = 'Контактное лицо:';
-$_['entry_sender_phone']        = 'Телефон:';
+$_['entry_status']     			= 'Статус';
+$_['entry_sort_order'] 			= 'Порядок сортировки';
+$_['entry_geo_zone']   			= 'Географическая зона';
+$_['entry_tax_class']  			= 'Налоговый класс';
+$_['entry_key_api'] 			= 'Ключ API';
+$_['entry_cost'] 				= 'Стоимость';
+$_['entry_tariff_calculation'] 	= 'Тарифный расчет';
+$_['entry_free_shipping'] 		= 'Бесплатная доставка от';
+$_['entry_delivery_period'] 	= 'Срок доставки';
+$_['entry_update_areas'] 		= 'Географические области';
+$_['entry_update_cities'] 		= 'Города';
+$_['entry_update_warehouses']	= 'Отделения';
+$_['entry_update_references']	= 'Справочники';
+$_['entry_sender'] 				= 'Отправитель';
+$_['entry_contact_person'] 		= 'Контактное лицо';
+$_['entry_address'] 			= 'Адрес';
+$_['entry_service_type'] 		= 'Тип доставки';
+$_['entry_cargo_description'] 	= 'Описание отправления';
+$_['entry_weight'] 				= 'Вес в кг';
+$_['entry_dimensions'] 			= 'Размеры в см (Ш x Д x В)';
+
+// Tab
+$_['tab_general']				= 'Основные';
+$_['tab_sending']				= 'Отправление';
+$_['tab_database']				= 'База данных';
+$_['tab_support']				= 'Поддержка';
+
+// Help
+$_['help_status'] 				= 'Включить или выключить модуль';
+$_['help_sort_order'] 			= 'Порядок сортировки модуля';
+$_['help_geo_zone'] 			= 'Выберите географическую зону для которой будет доступен этот способ доставки';
+$_['help_tax_class'] 			= 'Выберите налоговый класс';
+$_['help_key_api'] 				= 'Вставьте значение ключа API, который Вы сможете найти на сайте компании &laquo;Новая Почта&raquo; в собственном кабинете. Смотрите раздел Настройки &rarr; API 2.0';
+$_['help_cost'] 				= 'Рассчитывать стоимость доставки?';
+$_['help_tariff_calculation'] 	= 'Если выбрать &laquo;Да&raquo;, то в случае недоступности API будет использоваться расчет стоимости доставки согласно тарифам &laquo;Новой Почты&raquo;';
+$_['help_free_shipping'] 		= 'Укажите минимальную сумму заказа для бесплатной доставки';
+$_['help_delivery_period']	 	= 'Рассчитывать срок доставки?';
+$_['help_update_areas'] 		= 'Будет выполнена запись географических областей Украины согласно перечню компании &laquo;Новая Почта&raquo; в таблицу zone. Повторное обновление изменит идентификаторы географических областей, что в свою очередь приведет к потере названия области в адресе доставки клиента, поэтому выполнять повторное обновление без крайней необходимости НЕ НУЖНО! Данный тип данных совместим и с другими способами доставки';
+$_['help_update_cities'] 		= 'Будет выполнено обновление городов в которые возможна доставка компанией &laquo;Новая Почта&raquo;';
+$_['help_update_warehouses']	= 'Будет выполнено обновление отделений компании &laquo;Новая Почта&raquo;';
+$_['help_update_references']	= 'Будет выполнено обновление списка отправителей, контактных лиц, справочной и другой информации компании &laquo;Новая Почта&raquo; необходимой для работы дополнения. Рекомендуемая частота обновлений не реже 1 раза в месяц';
+$_['help_sender'] 				= 'Выберите отправителя и город с которого будет осуществляться отправление заказа';
+$_['help_contact_person'] 		= 'Выберите контактное лицо';
+$_['help_address'] 				= 'Выберите адрес с которого будет осуществляться отправление заказа';
+$_['help_service_type'] 		= 'Выберите тип доставки заказа';
+$_['help_cargo_description'] 	= 'Используется как описание товара по умолчанию при создании &laquo;ЭН&raquo;, если в магазине много товаров, которые имеют одинаковое описание';
+$_['help_weight'] 				= 'Укажите фактический вес по умолчанию. Будет использоваться в расчетах, если в карточке товара не указан вес';
+$_['help_dimensions'] 			= 'Укажите габаритные размеры по умолчанию. Будут использоваться в расчетах, если в карточке товара не указаны размеры';
 
 // Error
-$_['error_permission']          = 'У Вас нет прав для управления этим модулем!';
+$_['error_permission']			= 'Ошибка! У Вас отсутствуют права на изменение настроек!';
+$_['error_update']				= 'Ошибка обновления данных!';

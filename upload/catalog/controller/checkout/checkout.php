@@ -1,6 +1,14 @@
 <?php
 class ControllerCheckoutCheckout extends Controller {
 	public function index() {
+        $this->load->helper('simple/simplecheckout');
+
+        $settingsGroup = !empty($args['group']) ? $args['group'] : (!empty($this->request->get['group']) ? $this->request->get['group'] : 0);
+
+        $simplecheckout = SimpleCheckout::getInstance($this->registry, $settingsGroup);
+        $simplecheckout->redirect($this->url->link('checkout/simplecheckout', '', true));
+        return;
+
 		// Validate cart has products and has stock.
 		if ((!$this->cart->hasProducts() && empty($this->session->data['vouchers'])) || (!$this->cart->hasStock() && !$this->config->get('config_stock_checkout'))) {
 			$this->response->redirect($this->url->link('checkout/cart'));
