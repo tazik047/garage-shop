@@ -30,7 +30,7 @@
             <?php if ($customer_id) { ?>
             <li><a href="#tab-history" data-toggle="tab"><?php echo $tab_history; ?></a></li>
             <li><a href="#tab-transaction" data-toggle="tab"><?php echo $tab_transaction; ?></a></li>
-            <li><a href="#tab-reward" data-toggle="tab"><?php echo $tab_reward; ?></a></li>
+            <?php /* <li><a href="#tab-reward" data-toggle="tab"><?php echo $tab_reward; ?></a></li> */?>
             <li><a href="#tab-ip" data-toggle="tab"><?php echo $tab_ip; ?></a></li>
             <?php } ?>
           </ul>
@@ -633,6 +633,7 @@
                 <button type="button" id="button-transaction" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary"><i class="fa fa-plus-circle"></i> <?php echo $button_transaction_add; ?></button>
               </div>
             </div>
+            <?php /*
             <div class="tab-pane" id="tab-reward">
               <div id="reward"></div>
               <br />
@@ -652,6 +653,7 @@
                 <button type="button" id="button-reward" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary"><i class="fa fa-plus-circle"></i> <?php echo $button_reward_add; ?></button>
               </div>
             </div>
+            */ ?>
             <?php } ?>
             <div class="tab-pane" id="tab-ip">
               <div id="ip"></div>
