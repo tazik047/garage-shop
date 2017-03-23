@@ -15,7 +15,7 @@
     <?php } ?>
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
       <h1><?php echo $heading_title; ?></h1>
-      <label class="control-label" for="input-search"><?php echo $entry_search; ?></label>
+      <?php /* <label class="control-label" for="input-search"><?php echo $entry_search; ?></label> */ ?>
       <div class="row">
         <div class="col-sm-4">
           <input type="text" name="search" value="<?php echo $search; ?>" placeholder="<?php echo $text_keyword; ?>" id="input-search" class="form-control" />
@@ -75,10 +75,10 @@
       </div>
       <div class="row">
           <h2><?php echo $text_search; ?></h2>
-          <?php /* <?php if ($products) { ?>
-          <p><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></p> */ ?>
-        </div>
+      </div>
       <div class="row">
+        <?php if ($products) { ?>
+          <?php /* <p><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></p> */ ?>
         <?php /* <div class="col-sm-2">
           <label class="control-label" for="input-sort"><?php echo $text_sort; ?></label>
         </div> */ ?>
@@ -166,9 +166,9 @@
         <div class="col-sm-6 text-left"><?php echo $pagination; ?></div>
         <div class="col-sm-6 text-right"><?php echo $results; ?></div>
       </div>
-      <?php /* <?php } else { ?> */ ?>
-      <p><?php echo $text_empty; ?></p>
-      <?php /* <?php } ?> */ ?>
+      <?php } else { ?>
+      <p style="font-size: 12pt"><?php echo $text_empty; ?></p>
+      <?php } ?>
       <?php echo $content_bottom; ?></div>
     <?php echo $column_right; ?></div>
 </div>
