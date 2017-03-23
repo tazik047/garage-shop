@@ -20,7 +20,7 @@
         <div class="col-sm-4">
           <input type="text" name="search" value="<?php echo $search; ?>" placeholder="<?php echo $text_keyword; ?>" id="input-search" class="form-control" />
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-4">
           <select name="category_id" class="form-control">
             <option value="0"><?php echo $text_category; ?></option>
             <?php foreach ($categories as $category_1) { ?>
@@ -46,17 +46,10 @@
             <?php } ?>
           </select>
         </div>
-        <div class="col-sm-3">
-          <label class="checkbox-inline">
-            <?php if ($sub_category) { ?>
-            <input type="checkbox" name="sub_category" value="1" checked="checked" />
-            <?php } else { ?>
-            <input type="checkbox" name="sub_category" value="1" />
-            <?php } ?>
-            <?php echo $text_sub_category; ?></label>
-        </div>
       </div>
-      <p>
+      <?php // <p> ?>
+      <div class="row">
+      <div class="col-sm-4">
         <label class="checkbox-inline">
           <?php if ($description) { ?>
           <input type="checkbox" name="description" value="1" id="description" checked="checked" />
@@ -64,22 +57,33 @@
           <input type="checkbox" name="description" value="1" id="description" />
           <?php } ?>
           <?php echo $entry_description; ?></label>
-      </p>
-      <input type="button" value="<?php echo $button_search; ?>" id="button-search" class="btn btn-primary" />
-      <h2><?php echo $text_search; ?></h2>
-      <?php if ($products) { ?>
-      <p><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></p>
+      </div>
+      <div class="col-sm-4">
+          <label class="checkbox-inline">
+            <?php if ($sub_category) { ?>
+            <input type="checkbox" name="sub_category" value="1" checked="checked" />
+            <?php } else { ?>
+            <input type="checkbox" name="sub_category" value="1" />
+            <?php } ?>
+            <?php echo $text_sub_category; ?></label>
+      </div>
+      </div>
       <div class="row">
-        <div class="col-sm-3 hidden-xs">
-          <div class="btn-group">
-            <button type="button" id="list-view" class="btn btn-default" data-toggle="tooltip" title="<?php echo $button_list; ?>"><i class="fa fa-th-list"></i></button>
-            <button type="button" id="grid-view" class="btn btn-default" data-toggle="tooltip" title="<?php echo $button_grid; ?>"><i class="fa fa-th"></i></button>
-          </div>
+        <div class="col-sm-4">
+          <input type="button" style="min-width: 100px;" value="<?php echo $button_search; ?>" id="button-search" class="btn btn-primary" />
         </div>
-        <div class="col-sm-1 col-sm-offset-2 text-right">
+      </div>
+      <div class="row">
+          <h2><?php echo $text_search; ?></h2>
+          <?php /* <?php if ($products) { ?>
+          <p><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></p> */ ?>
+        </div>
+      <div class="row">
+        <?php /* <div class="col-sm-2">
           <label class="control-label" for="input-sort"><?php echo $text_sort; ?></label>
-        </div>
-        <div class="col-sm-3 text-right">
+        </div> */ ?>
+        <div class="col-sm-4">
+          <label class="control-label" for="input-sort"><?php echo $text_sort; ?></label>
           <select id="input-sort" class="form-control col-sm-3" onchange="location = this.value;">
             <?php foreach ($sorts as $sorts) { ?>
             <?php if ($sorts['value'] == $sort . '-' . $order) { ?>
@@ -90,10 +94,11 @@
             <?php } ?>
           </select>
         </div>
-        <div class="col-sm-1 text-right">
+        <?php /* <div class="col-sm-1">
           <label class="control-label" for="input-limit"><?php echo $text_limit; ?></label>
-        </div>
-        <div class="col-sm-2 text-right">
+        </div> */ ?>
+        <div class="col-sm-2">
+          <label class="control-label" for="input-limit"><?php echo $text_limit; ?></label>
           <select id="input-limit" class="form-control" onchange="location = this.value;">
             <?php foreach ($limits as $limits) { ?>
             <?php if ($limits['value'] == $limit) { ?>
@@ -104,6 +109,13 @@
             <?php } ?>
           </select>
         </div>
+        <div class="col-sm-2 hidden-xs">
+          <label class="control-label" for="input-sort"><?php echo $text_view; ?></label>
+          <div class="btn-group">
+            <button type="button" id="list-view" class="btn btn-default" data-toggle="tooltip" title="<?php echo $button_list; ?>"><i class="fa fa-th-list"></i></button>
+            <button type="button" id="grid-view" class="btn btn-default" data-toggle="tooltip" title="<?php echo $button_grid; ?>"><i class="fa fa-th"></i></button>
+          </div>
+        </div>  
       </div>
       <br />
       <div class="row">
@@ -154,9 +166,9 @@
         <div class="col-sm-6 text-left"><?php echo $pagination; ?></div>
         <div class="col-sm-6 text-right"><?php echo $results; ?></div>
       </div>
-      <?php } else { ?>
+      <?php /* <?php } else { ?> */ ?>
       <p><?php echo $text_empty; ?></p>
-      <?php } ?>
+      <?php /* <?php } ?> */ ?>
       <?php echo $content_bottom; ?></div>
     <?php echo $column_right; ?></div>
 </div>
