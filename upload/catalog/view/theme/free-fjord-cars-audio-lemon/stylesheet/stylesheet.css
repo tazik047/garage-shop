@@ -808,6 +808,7 @@ header {
   margin-bottom: -30px;
   min-height: 600px;
   padding-bottom: 30px;
+  padding-top: 20px;
 }
 #cart, #search {
   margin-bottom: 10px;

@@ -14,7 +14,13 @@
     <?php } elseif ($column_left || $column_right) { ?>
     <?php $class = 'col-sm-9'; ?>
     <?php } else { ?>
-    <?php $class = ''; ?>
+    <?php $class = 'col-sm-12'; ?>
     <?php } ?>
+    <style>
+      .col-sm-12 td{
+        float: none;
+        width: auto;
+      }
+    </style>
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
       <h1><?php echo $heading_title; ?></h1>
