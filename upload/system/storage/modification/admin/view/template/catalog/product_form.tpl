@@ -391,6 +391,7 @@
                 </div>
               </div>
               */ ?>
+              <input type="hidden" name="product_store[]" value="0" />
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-download"><span data-toggle="tooltip" title="<?php echo $help_download; ?>"><?php echo $entry_download; ?></span></label>
                 <div class="col-sm-10">

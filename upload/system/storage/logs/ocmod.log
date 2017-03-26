@@ -1238,3 +1238,379 @@ FILE: catalog/view/theme/default/template/checkout/simplecheckout.tpl
 CODE: <?php include
 LINE: 319
 ----------------------------------------------------------------
+2017-03-27 1:24:09 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Auto Fill URL
+
+FILE: admin/controller/catalog/product.php
+CODE: function getForm()
+LINE: 547
+
+FILE: admin/controller/catalog/category.php
+CODE: function getForm()
+LINE: 300
+
+FILE: admin/controller/catalog/manufacturer.php
+CODE: function getForm()
+LINE: 265
+
+FILE: admin/controller/catalog/information.php
+CODE: function getForm()
+LINE: 265
+
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <?php echo $footer; ?>
+LINE: 1424
+
+FILE: admin/view/template/catalog/category_form.tpl
+CODE: <?php echo $footer; ?>
+LINE: 305
+
+FILE: admin/view/template/catalog/manufacturer_form.tpl
+CODE: <?php echo $footer; ?>
+LINE: 98
+
+FILE: admin/view/template/catalog/information_form.tpl
+CODE: <?php echo $footer; ?>
+LINE: 217
+----------------------------------------------------------------
+MOD: Nova Poshta API 2.0 Express Invoice
+
+FILE: admin/controller/sale/order.php
+CODE: $order_info = $this->model_sale_order->getOrder($order_id);
+LINE: 779
+
+FILE: admin/view/template/sale/order_info.tpl
+CODE: pull-right">
+LINE: 4
+CODE: $data['invoice']
+LINE: 192
+
+FILE: admin/view/template/sale/order_list.tpl
+CODE: <div class="pull-right">
+LINE: 7
+----------------------------------------------------------------
+MOD: Nova Poshta API 2.0 for Simple checkout v. 4.3.1 - 4.4.X
+
+FILE: catalog/controller/checkout/simplecheckout.php
+CODE: $this->language->load('checkout/checkout');
+LINE: 35
+
+FILE: catalog/view/theme/default/template/checkout/simplecheckout.tpl
+CODE: <?php include
+LINE: 319
+----------------------------------------------------------------
+2017-03-27 1:27:48 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Auto Fill URL
+
+FILE: admin/controller/catalog/product.php
+CODE: function getForm()
+LINE: 547
+
+FILE: admin/controller/catalog/category.php
+CODE: function getForm()
+LINE: 300
+
+FILE: admin/controller/catalog/manufacturer.php
+CODE: function getForm()
+LINE: 265
+
+FILE: admin/controller/catalog/information.php
+CODE: function getForm()
+LINE: 265
+
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <?php echo $footer; ?>
+LINE: 1425
+
+FILE: admin/view/template/catalog/category_form.tpl
+CODE: <?php echo $footer; ?>
+LINE: 305
+
+FILE: admin/view/template/catalog/manufacturer_form.tpl
+CODE: <?php echo $footer; ?>
+LINE: 98
+
+FILE: admin/view/template/catalog/information_form.tpl
+CODE: <?php echo $footer; ?>
+LINE: 217
+----------------------------------------------------------------
+MOD: Nova Poshta API 2.0 Express Invoice
+
+FILE: admin/controller/sale/order.php
+CODE: $order_info = $this->model_sale_order->getOrder($order_id);
+LINE: 779
+
+FILE: admin/view/template/sale/order_info.tpl
+CODE: pull-right">
+LINE: 4
+CODE: $data['invoice']
+LINE: 192
+
+FILE: admin/view/template/sale/order_list.tpl
+CODE: <div class="pull-right">
+LINE: 7
+----------------------------------------------------------------
+MOD: Nova Poshta API 2.0 for Simple checkout v. 4.3.1 - 4.4.X
+
+FILE: catalog/controller/checkout/simplecheckout.php
+CODE: $this->language->load('checkout/checkout');
+LINE: 35
+
+FILE: catalog/view/theme/default/template/checkout/simplecheckout.tpl
+CODE: <?php include
+LINE: 319
+----------------------------------------------------------------
+2017-03-27 1:28:12 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Auto Fill URL
+
+FILE: admin/controller/catalog/product.php
+CODE: function getForm()
+LINE: 547
+
+FILE: admin/controller/catalog/category.php
+CODE: function getForm()
+LINE: 300
+
+FILE: admin/controller/catalog/manufacturer.php
+CODE: function getForm()
+LINE: 265
+
+FILE: admin/controller/catalog/information.php
+CODE: function getForm()
+LINE: 265
+
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <?php echo $footer; ?>
+LINE: 1425
+
+FILE: admin/view/template/catalog/category_form.tpl
+CODE: <?php echo $footer; ?>
+LINE: 305
+
+FILE: admin/view/template/catalog/manufacturer_form.tpl
+CODE: <?php echo $footer; ?>
+LINE: 98
+
+FILE: admin/view/template/catalog/information_form.tpl
+CODE: <?php echo $footer; ?>
+LINE: 217
+----------------------------------------------------------------
+MOD: Nova Poshta API 2.0 Express Invoice
+
+FILE: admin/controller/sale/order.php
+CODE: $order_info = $this->model_sale_order->getOrder($order_id);
+LINE: 779
+
+FILE: admin/view/template/sale/order_info.tpl
+CODE: pull-right">
+LINE: 4
+CODE: $data['invoice']
+LINE: 192
+
+FILE: admin/view/template/sale/order_list.tpl
+CODE: <div class="pull-right">
+LINE: 7
+----------------------------------------------------------------
+MOD: Nova Poshta API 2.0 for Simple checkout v. 4.3.1 - 4.4.X
+
+FILE: catalog/controller/checkout/simplecheckout.php
+CODE: $this->language->load('checkout/checkout');
+LINE: 35
+
+FILE: catalog/view/theme/default/template/checkout/simplecheckout.tpl
+CODE: <?php include
+LINE: 319
+----------------------------------------------------------------
+2017-03-27 1:28:17 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Auto Fill URL
+
+FILE: admin/controller/catalog/product.php
+CODE: function getForm()
+LINE: 547
+
+FILE: admin/controller/catalog/category.php
+CODE: function getForm()
+LINE: 300
+
+FILE: admin/controller/catalog/manufacturer.php
+CODE: function getForm()
+LINE: 265
+
+FILE: admin/controller/catalog/information.php
+CODE: function getForm()
+LINE: 265
+
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <?php echo $footer; ?>
+LINE: 1425
+
+FILE: admin/view/template/catalog/category_form.tpl
+CODE: <?php echo $footer; ?>
+LINE: 305
+
+FILE: admin/view/template/catalog/manufacturer_form.tpl
+CODE: <?php echo $footer; ?>
+LINE: 98
+
+FILE: admin/view/template/catalog/information_form.tpl
+CODE: <?php echo $footer; ?>
+LINE: 217
+----------------------------------------------------------------
+MOD: Nova Poshta API 2.0 Express Invoice
+
+FILE: admin/controller/sale/order.php
+CODE: $order_info = $this->model_sale_order->getOrder($order_id);
+LINE: 779
+
+FILE: admin/view/template/sale/order_info.tpl
+CODE: pull-right">
+LINE: 4
+CODE: $data['invoice']
+LINE: 192
+
+FILE: admin/view/template/sale/order_list.tpl
+CODE: <div class="pull-right">
+LINE: 7
+----------------------------------------------------------------
+MOD: Nova Poshta API 2.0 for Simple checkout v. 4.3.1 - 4.4.X
+
+FILE: catalog/controller/checkout/simplecheckout.php
+CODE: $this->language->load('checkout/checkout');
+LINE: 35
+
+FILE: catalog/view/theme/default/template/checkout/simplecheckout.tpl
+CODE: <?php include
+LINE: 319
+----------------------------------------------------------------
