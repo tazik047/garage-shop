@@ -27,6 +27,7 @@
           </ul>
           <div class="tab-content">
             <div class="tab-pane active" id="tab-customer">
+						<?php //TO-DO: HIDE IT CORRECTLY ?>
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-store"><?php echo $entry_store; ?></label>
                 <div class="col-sm-10">
@@ -41,6 +42,7 @@
                   </select>
                 </div>
               </div>
+							
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-currency"><?php echo $entry_currency; ?></label>
                 <div class="col-sm-10">
@@ -309,10 +311,12 @@
                   <?php } ?>
                 </table>
               </div>
+							<?php /*
               <ul class="nav nav-tabs nav-justified">
                 <li class="active"><a href="#tab-product" data-toggle="tab"><?php echo $tab_product; ?></a></li>
-                <li><a href="#tab-voucher" data-toggle="tab"><?php echo $tab_voucher; ?></a></li>
+                <?php /* <li><a href="#tab-voucher" data-toggle="tab"><?php echo $tab_voucher; ?></a></li>
               </ul>
+							*/ ?>
               <div class="tab-content">
                 <div class="tab-pane active" id="tab-product">
                   <fieldset>
@@ -336,6 +340,7 @@
                     <button type="button" id="button-product-add" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary"><i class="fa fa-plus-circle"></i> <?php echo $button_product_add; ?></button>
                   </div>
                 </div>
+								<?php /*
                 <div class="tab-pane" id="tab-voucher">
                   <fieldset>
                     <legend><?php echo $text_voucher; ?></legend>
@@ -390,6 +395,7 @@
                     <button type="button" id="button-voucher-add" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary"><i class="fa fa-plus-circle"></i> <?php echo $button_voucher_add; ?></button>
                   </div>
                 </div>
+								*/ ?>
               </div>
               <br />
               <div class="row">
@@ -882,6 +888,7 @@
                       </span></div>
                   </div>
                 </div>
+								<?php /*
                 <div class="form-group">
                   <label class="col-sm-2 control-label" for="input-coupon"><?php echo $entry_coupon; ?></label>
                   <div class="col-sm-10">
@@ -912,6 +919,7 @@
                       </span></div>
                   </div>
                 </div>
+								*/ ?>
                 <div class="form-group">
                   <label class="col-sm-2 control-label" for="input-order-status"><?php echo $entry_order_status; ?></label>
                   <div class="col-sm-10">
@@ -933,6 +941,7 @@
                     <textarea name="comment" rows="5" id="input-comment" class="form-control"><?php echo $comment; ?></textarea>
                   </div>
                 </div>
+								<?php /*
                 <div class="form-group">
                   <label class="col-sm-2 control-label" for="input-affiliate"><?php echo $entry_affiliate; ?></label>
                   <div class="col-sm-10">
@@ -940,6 +949,7 @@
                     <input type="hidden" name="affiliate_id" value="<?php echo $affiliate_id; ?>" />
                   </div>
                 </div>
+								*/ ?>
               </fieldset>
               <div class="row">
                 <div class="col-sm-6 text-left">

@@ -87,6 +87,7 @@
                   <button disabled="disabled" class="btn btn-success btn-xs"><i class="fa fa-refresh"></i></button>
                   <?php } ?></td>
               </tr>
+              <?php /*
               <tr>
                 <td><?php echo $text_reward; ?></td>
                 <td class="text-right"><?php echo $reward; ?></td>
@@ -100,6 +101,8 @@
                   <button disabled="disabled" class="btn btn-success btn-xs"><i class="fa fa-plus-circle"></i></button>
                   <?php } ?></td>
               </tr>
+              */ ?>
+              <?php /*
               <tr>
                 <td><?php echo $text_affiliate; ?>
                   <?php if ($affiliate) { ?>
@@ -116,6 +119,7 @@
                   <button disabled="disabled" class="btn btn-success btn-xs"><i class="fa fa-plus-circle"></i></button>
                   <?php } ?></td>
               </tr>
+              */ ?>
             </tbody>
           </table>
         </div>
