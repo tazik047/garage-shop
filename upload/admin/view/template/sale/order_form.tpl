@@ -27,8 +27,7 @@
           </ul>
           <div class="tab-content">
             <div class="tab-pane active" id="tab-customer">
-						<?php //TO-DO: HIDE IT CORRECTLY ?>
-              <div class="form-group">
+              <div class="form-group" style="display: none">
                 <label class="col-sm-2 control-label" for="input-store"><?php echo $entry_store; ?></label>
                 <div class="col-sm-10">
                   <select name="store_id" id="input-store" class="form-control">

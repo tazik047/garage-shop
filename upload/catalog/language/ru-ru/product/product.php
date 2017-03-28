@@ -35,7 +35,7 @@ $_['text_month']                              = 'месяц';
 $_['text_year']                               = 'год';
 
 // Entry
-$_['entry_qty']                               = 'Количество';
+$_['entry_qty']                               = 'Количество:';
 $_['entry_name']                              = 'Ваше имя:';
 $_['entry_review']                            = 'Ваш отзыв:';
 $_['entry_rating']                            = 'Оценка:';

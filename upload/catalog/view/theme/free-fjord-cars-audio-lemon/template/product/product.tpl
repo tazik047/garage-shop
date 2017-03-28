@@ -65,7 +65,9 @@
             <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
           </ul>
           <?php if ($price) { ?>
-          <ul class="list-unstyled">
+          <h2><?php echo $price; ?></h2>
+          <br />
+          <?php /* <ul class="list-unstyled">
             <?php if (!$special) { ?>
             <li>
               <h2><?php echo $price; ?></h2>
@@ -90,7 +92,7 @@
             <li><?php echo $discount['quantity']; ?><?php echo $text_discount; ?><?php echo $discount['price']; ?></li>
             <?php } ?>
             <?php } ?>
-          </ul>
+          </ul> */ ?>
           <?php } ?>
           <div id="product">
             <?php if ($options) { ?>
@@ -232,8 +234,9 @@
             <?php } ?>
             <div class="form-group">
               <label class="control-label" for="input-quantity"><?php echo $entry_qty; ?></label>
-              <input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity" class="form-control" />
+              <input type="number" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity" class="form-control" style="max-width: 80px; display: inline; margin-left: 10px" />
               <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+              <br />
               <br />
               <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary btn-lg btn-block"><?php echo $button_cart; ?></button>
             </div>
