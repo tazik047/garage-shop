@@ -45,7 +45,7 @@ class ModelExtensionShippingNovaPoshta extends Model {
 
 
 					if ($weight) {
-						$properties = array( 'CitySender' => $this->config->get( 'novaposhta_sender_city' ), 'CityRecipient' => $recipient, 'ServiceType' => $this->config->get( 'novaposhta_service_type' ), 'Weight' => $weight, 'Cost' => $sub_total, 'DateTime' => date( 'd.m.Y' ) );
+						$properties = array( 'CitySender' => $this->config->get( 'novaposhta_sender_city' ), 'CityRecipient' => $recipient, 'ServiceType' => $this->config->get( 'novaposhta_service_type' ), 'Weight' => $weight, 'Cost' => $sub_total );
 						$cost = $novaposhta->getDocumentPrice( $properties );
 
 						if (( !$cost && $this->config->get( 'novaposhta_tariff_calculation' ) )) {
