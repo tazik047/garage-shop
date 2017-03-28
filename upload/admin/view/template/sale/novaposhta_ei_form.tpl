@@ -43,7 +43,7 @@
 			          		<div class="form-group">
 			          			<label class="col-sm-4 control-label" for="input-sender_city"><?php echo $entry_city; ?></label>
 			            		<div class="col-sm-8">
-			              			<input type="text" name="sender_city" value="<?php echo $ei['senders'][$novaposhta_sender]['CityDescription']; ?>" placeholder="<?php echo $entry_city; ?>" id="input-sender_city" class="form-control" />
+			              			<input type="text" name="sender_city" value="<?php echo $ei['sender_address'][0]['CityDescription']; ?>" placeholder="<?php echo $entry_city; ?>" id="input-sender_city" class="form-control" />
 			            		</div>
 			          		</div>
 			          		<div class="form-group">
