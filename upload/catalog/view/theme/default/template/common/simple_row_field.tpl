@@ -14,7 +14,7 @@
       </select>
     <?php } elseif ($type == 'radio') { ?>
       <?php foreach ($values as $info) { ?>
-        <label><input class="form-control" type="radio" name="<?php echo $name ?>" id="<?php echo $id ?>" value="<?php echo $info['id'] ?>" <?php echo $value == $info['id'] ? 'checked="checked"' : '' ?> <?php echo $reload ? 'data-onchange="reloadAll"' : ''?>><?php echo $info['text'] ?></label>
+        <label><input type="radio" name="<?php echo $name ?>" id="<?php echo $id ?>" value="<?php echo $info['id'] ?>" <?php echo $value == $info['id'] ? 'checked="checked"' : '' ?> <?php echo $reload ? 'data-onchange="reloadAll"' : ''?>><?php echo $info['text'] ?></label>
       <?php } ?>
     <?php } elseif ($type == 'checkbox') { ?>
       <?php foreach ($values as $info) { ?>
