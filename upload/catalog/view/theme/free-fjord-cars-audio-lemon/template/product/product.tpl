@@ -621,4 +621,5 @@ $(document).ready(function() {
 	});
 });
 //--></script>
+</div>
 <?php echo $footer; ?>
